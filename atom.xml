@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Vishal Kishanchand Rajpal</title>
+  <generator uri="https://github.com/jekyll/jekyll">Jekyll v3.1.1</generator>
+    <icon>/apple-touch-icon-precomposed.png</icon>
+  <subtitle>Big data, Hadoop, Spark, moving to Chicago, fitness</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="/" rel="alternate" type="text/html"/>
+  <updated>2016-02-21T10:36:11-06:00</updated>
+  <id>/</id>
+  <author>
+    <name>Vishal Rajpal</name>
+    <uri>/</uri>
+    <email>vishalrajpal25@gmail.com</email>
+  </author>
+
+  
+  
+</feed>
