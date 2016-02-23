@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<<<<<<< HEAD
 <loc>http://vishalrajpal25.github.io//bigdata/2016-real-challenges-in-big-data-implementations/</loc>
 <lastmod>2016-02-23T11:10:06-06:00</lastmod>
 </url>
@@ -15,5 +16,11 @@
 </url>
 <url>
 <loc>http://vishalrajpal25.github.io//wellbeing/</loc>
+=======
+<loc>/connect/</loc>
+</url>
+<url>
+<loc>/</loc>
+>>>>>>> 40b57bb9612fcd05da0d1afca13f5766fb7a5ce5
 </url>
 </urlset>
