@@ -3,32 +3,19 @@
 
   <title>Vishal Kishanchand Rajpal</title>
   <generator uri="https://github.com/jekyll/jekyll">Jekyll v3.1.1</generator>
-<<<<<<< HEAD
     <icon>http://vishalrajpal25.github.io//apple-touch-icon-precomposed.png</icon>
   <subtitle>Big data, Hadoop, Spark, moving to Chicago, fitness</subtitle>
   <link href="http://vishalrajpal25.github.io//atom.xml" rel="self"/>
   <link href="http://vishalrajpal25.github.io//" rel="alternate" type="text/html"/>
-  <updated>2016-02-23T15:45:58-06:00</updated>
+  <updated>2016-02-23T15:50:31-06:00</updated>
   <id>http://vishalrajpal25.github.io//</id>
   <author>
     <name>Vishal Rajpal</name>
     <uri>http://vishalrajpal25.github.io//</uri>
-=======
-    <icon>/apple-touch-icon-precomposed.png</icon>
-  <subtitle>Big data, Hadoop, Spark, moving to Chicago, fitness</subtitle>
-  <link href="/atom.xml" rel="self"/>
-  <link href="/" rel="alternate" type="text/html"/>
-  <updated>2016-02-21T10:36:11-06:00</updated>
-  <id>/</id>
-  <author>
-    <name>Vishal Rajpal</name>
-    <uri>/</uri>
->>>>>>> 40b57bb9612fcd05da0d1afca13f5766fb7a5ce5
     <email>vishalrajpal25@gmail.com</email>
   </author>
 
   
-<<<<<<< HEAD
   <entry>
     <title>2016 - Practical Challenges in Big Data Implementations</title>
     <link href="http://vishalrajpal25.github.io//bigdata/2016-real-challenges-in-big-data-implementations/"/>
@@ -81,7 +68,5 @@ Despite the challenges, Big data is turning into a more mature and important com
     </content>
   </entry>
   
-=======
->>>>>>> 40b57bb9612fcd05da0d1afca13f5766fb7a5ce5
   
 </feed>
