@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spark on YARN - Considerations and Configurations • Vishal Rajpal</title>
+    <meta name="description" content="Key considerations and configurations for running Spark engine on YARN (Hadoop).">
+    <meta name="keywords" content="Big data, bigdata, spark, yarn, hadoop, machin learning">
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Spark on YARN - Considerations and Configurations">
+	<meta name="twitter:description" content="Key considerations and configurations for running Spark engine on YARN (Hadoop).">
+	<meta name="twitter:site" content="@VishRajpal">
+	<meta name="twitter:creator" content="@VishRajpal">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/images/vishalrajpal_120x120.jpg">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Spark on YARN - Considerations and Configurations">
+	<meta property="og:description" content="Key considerations and configurations for running Spark engine on YARN (Hadoop).">
+	<meta property="og:url" content="/bigdata/spark-on-yarn-considerations-and-configurations/">
+	<meta property="og:site_name" content="Vishal Rajpal">
+
+    <link rel="canonical" href="/bigdata/spark-on-yarn-considerations-and-configurations/">
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Vishal Rajpal Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="js-body">
+    <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
+
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="/" class="site-title">Vishal Rajpal</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">Vishal Rajpal</a></li>
+	
+    
+    <li><a href="/" >About</a></li>
+  
+    
+    <li><a href="/bigdata/" >Big Data</a></li>
+  
+    
+    <li><a href="/wellbeing/" >Well-being</a></li>
+  
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5>Vishal Rajpal <span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    <li>
+      <a href="/">
+        
+        <div class="title">About</div>
+        
+      </a>
+    </li><li>
+      <a href="/bigdata/">
+        
+        <div class="title">Big Data</div>
+        
+      </a>
+    </li><li>
+      <a href="/wellbeing/">
+        
+        <div class="title">Well-being</div>
+        
+      </a>
+    </li>
+  </ul>
+</nav>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="nav-lines"></span>
+</button>
+
+<div id="js-menu-screen" class="menu-screen"></div>
+
+
+    <div id="page-wrapper">
+      <div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		
+		
+  <nav class="breadcrumbs">
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="" itemprop="url">
+        <span itemprop="title">Home</span>
+      </a> › 
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="/bigdata/" itemprop="url">
+        <span itemprop="title">Bigdata</span>
+      </a>
+    </span>
+  </nav><!-- /.breadcrumbs -->
+
+		<div class="page-title">
+			<h1>Spark on YARN - Considerations and Configurations</h1>
+		</div>
+		<div class="inner-wrap">
+			<div id="content" class="page-content" itemprop="articleBody">
+				<h5>About Spark</h5>
+<p>Apache Spark™ is a DAG based execution engine for large-scale data processing. It has in-memory processing capabilities making it faster as compared to other execution engines. Spark boasts ease of use and generality through native language support (R, Scala, Python, Java ) and SQL &amp; streaming analytics respectively.</p>
+
+<h5>Spark on Yarn</h5>
+<p>Spark runs on Hadoop (YARN), Mesos, standalone, or in the cloud. It can access diverse data sources including HDFS, Cassandra, HBase, and S3.
+Running Spark on YARN cluster processng of data available in HDFS as well as leveraging the hardware resources available in the already commissioned Hadoop cluster.</p>
+
+<p>Spark documentation has detailed information about running Spark engine on YARN <a href="http://spark.apache.org/docs/latest/running-on-yarn.html" about="_blank">here</a></p>
+
+<p>As part of the article, I intend to expand on few of the important considerations and configurations to be aware about during practical usage of Spark for Machine learning or general purpose processing. 
+I had the opportunity to play around these configurations and understand the considerations while I was involved in developing a machine learning model on text data. The versions used were: Spark 1.2, Python 2.6 and YARN.</p>
+
+<ul>
+<b><li>Hadoop environment variables</li></b>
+For Spark to run on YARN and also access the HDFS directories, it needs to know the Hadoop and Yarn client properties - basically, the resource manager (RM) address and also the HDfS port.
+Below are the environment variables that need to be set to the directory containing the necessary configurations:
+<br />
+export HADOOP_CONF_DIR=HADOOP_CONF_DIR
+<br />
+export YARN_CONF_DIR=YARN_CONF_DIR
+<br />
+<br />
+
+<b><li>Initializing Spark on YARN</li></b>
+For initializing Spark on YARN, one needs to set the parameter --master to value as yarn. Within YARN, there are two modes - client and cluster. The modes have one significant difference pertaining to the control and execution of the driver program for the Spark application - whether within the client program OR AM (application master) in YARN.
+<code>$ $SPARK_BIN/spark-submit --master yarn .... </code>
+
+<br />
+<br />
+
+<b><li>Imports and parameters</li></b>
+Spark is a distributed computing engine, where multiple machines are used to run executors working on different tasks. These tasks are part of a single application controlled by the driver. As the executors run tasks in parallel, it is imperative that all executors running on machines across the cluster have access to the configurations, base code, libraries and user defined modules used in the application code. Spark provides multiple parameters to share Java maven, python modules and libraries to all executors part of the launching application. These files can be passed from the client script launching the spark application. The parameters are listed below: <br />
+  <ol>
+  <li>--packages              Comma-separated list of maven coordinates of jars </li>
+  <li>--py-files PY_FILES     Comma-separated list of .zip, .egg, or .py files, one might always have some proprietary functions defined and used in the application</li>
+  <li>--files FILES           Comma-separated list of files, general purpose files, dictionaries, etc.</li>
+  <li>--conf PROP=VALUE       Arbitrary Spark configuration property, VM settings, etc.</li>
+  <li><i>--properties-file**</i>  Override spark specific properties, like memory limits</li>
+  </ol>                         
+<br />
+
+<b><li>Memory related properties</li></b>
+Spark provides a number of properties for fine-tuning or changing default configurations. The primary ones that we need for large scale data processing are related to the memory settings of executor and drivers (listed below).
+
+<ol>
+
+<li>driver-memory ::- Total memory for driver (e.g. 1000M, 2G), container level for YARN</li>
+<li>executor-memory  ::- Total nemory per executor (e.g. 1000M, 2G), container level for YARN</li>
+<li>spark.yarn.executor.memoryOverhead ::- Typically 6-10% of executorMemory, with minimum of 384 MB. This is the amount of off-heap memory (in megabytes) to be allocated per executor. This is memory that accounts for things like VM overheads, interned strings, other native overheads, etc. This tends to grow with the executor size (typically 6-10%). </li>
+<li>spark.yarn.driver.memoryOverhead ::- Typically 6-10% of driverMemory, with minimum of 384 MB. This is the amount of off-heap memory (in megabytes) to be allocated per driver in cluster mode. This is memory that accounts for things like VM overheads, interned strings, other native overheads, etc. This tends to grow with the container size. </li>
+<li> spark.yarn.am.extraJavaOptions ::- A string of extra JVM options to pass to the YARN Application Master in client mode. One can use it to pass gC level setting or debugging parameters.</li>
+
+
+<h5>Closing</h5>
+Spark is a powerful in-memory data processing engine with a rich API and advanced data processing capabilities like graph and machine learning. One does need to understand the right combination of Spark configurations and their tuning criteria to be able to pre-process, process and train a model on large data sets.
+A typical pyspark of scala spark launcher command might look like (based on the content of the article)::
+<br />
+<code>pyspark --master yarn --py-files pre_processing.py --conf spark.driver.maxResultSize=1g --num-executors 10 --driver-memory 1g --executor-memory 768m </code>
+
+
+</ol></ul>
+
+				<hr />
+				<footer class="page-footer">
+					<div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Spark%20on%20YARN%20-%20Considerations%20and%20Configurations&amp;url=/bigdata/spark-on-yarn-considerations-and-configurations/&amp;via=VishRajpal" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=/bigdata/spark-on-yarn-considerations-and-configurations/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=/bigdata/spark-on-yarn-considerations-and-configurations/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+
+					<div class="page-meta">
+	<p>Updated <time datetime="2016-02-25T15:29:05Z" itemprop="datePublished">February 25, 2016</time></p>
+</div><!-- /.page-meta -->
+				</footer><!-- /.footer -->
+				<aside>
+					
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		
+	</article><!-- /.wrap -->
+</div><!-- /#main -->
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+			<li><a href="/" >Home</a></li>
+		
+      
+			<li><a href="/connect/" >Connect</a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2016 <a href="">Vishal Rajpal</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+</footer>
+    </div>
+
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+  </body>
+
+</html>

@@ -1,4 +1,4 @@
 export HADOOP_CONF_DIR=/etc/hadoop/conf
 export YARN_CONF_DIR=/etc/hadoop/conf
 export PYSPARK_PYTHON=/usr/bin/python2.7
-pyspark --master local[2] --py-files pre_processing.py --conf spark.driver.maxResultSize=1g --num-executors 10 --driver-memory 1g --executor-memory 768m 
+pyspark --master yarn --py-files pre_processing.py --conf spark.driver.maxResultSize=1g --num-executors 10 --driver-memory 1g --executor-memory 768m 
