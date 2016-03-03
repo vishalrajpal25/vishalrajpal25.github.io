@@ -7,7 +7,7 @@
   <subtitle>Big data, Hadoop, Spark, moving to Chicago, fitness</subtitle>
   <link href="http://vishalrajpal25.github.io/atom.xml" rel="self"/>
   <link href="http://vishalrajpal25.github.io/" rel="alternate" type="text/html"/>
-  <updated>2016-02-25T22:51:47-06:00</updated>
+  <updated>2016-03-02T18:49:44-06:00</updated>
   <id>http://vishalrajpal25.github.io/</id>
   <author>
     <name>Vishal Rajpal</name>
@@ -15,6 +15,75 @@
     <email>vishalrajpal25@gmail.com</email>
   </author>
 
+  
+  <entry>
+    <title>Settling in Chicago</title>
+    <link href="http://vishalrajpal25.github.io/diy/settling-in-chicago/"/>
+    <updated>2016-03-02T18:37:07-06:00</updated>
+    <id>http://vishalrajpal25.github.io/diy/settling-in-chicago</id>
+    <author>
+      <name>Vishal Rajpal</name>
+      <uri>http://vishalrajpal25.github.io/</uri>
+      <email>vishalrajpal25@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;We (my wife and I) had a unique experience of finding an apartment, buying necessary amenities / furniture at the time we reached Chicago. I thought to document our experiences and share for people who just moved and need a guide.&lt;/p&gt;
+
+&lt;h5&gt;Our Experiences&lt;/h5&gt;
+&lt;p&gt;The first challenge began with the weather. Chicago is very cold during the winters - specifically months of January and February. I would strongly recommend to take the cold seriously and wear 4-5 layers while stepping out during cold weather.&lt;/p&gt;
+
+&lt;p&gt;I reached Chicago in the 2nd week of January with high expectations to settle as quickly as possible. The day we reached, the weather department issued a wind chill advisory, which means temperature dropping to single digits in Fahrenheit (negative in celsius). I clearly remember temperature of -17 degrees C on the days we were visiting various apartments in Downtown Chicago.&lt;/p&gt;
+
+&lt;h5&gt;Tips&lt;/h5&gt;
+&lt;p&gt;Here are a few tips I thought to share:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;b&gt;&lt;li&gt;Pre-liminary research&lt;/li&gt;&lt;/b&gt;
+Although the first step should be to identify one&#39;s budget, it does not harm in browsing around doing some research on the available apartments and their rents. One could use a number of national (apartment, rent, etc) and local (domu, craigslist) websites to check various locations and the rents in those areas,
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;&lt;li&gt;Budget&lt;/li&gt;&lt;/b&gt;
+This is very important. Vanilla case would be 35% of take home salary is the max one can afford to pay as monthly rent. I have a slightly different opinion, since you may have an option to save more and pay only 10-20% of your take home as rent. Also, none of the websites I browsed mentioned about the added costs related to renting an apartment. These are utility bills, renters insurance, one time internet cable connection charges to name a few. Ensure that your budget is inclusive of all the monthly pay-outs apart from the rent to be able to completely visualize your cost of renting the apartment
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;&lt;li&gt;Location&lt;/li&gt;&lt;/b&gt;
+One of the most important criteria is whether to rent in Chicago downtown or suburbs. There are limitless options for one to rent an apartment. Some folks whom I spoke to try to find locations closer to their friends, relatives, god-fathers or god-brothers. Post that, they looked at their location of work. I would recommend both - try to find an apartment closest to work and also reachable to acquaintances. Both are equally important. You may find spending 200 USD more on an apartment closer to work and getting more time with family worthwhile as opposed to saving the 200 USD (which eventually you may spend in buying Metra tickets). Nevertheless, the right location is crucial, save money as well time.
+&lt;br /&gt;
+Downtown - high rents (-), no need to maintain a car (-), very costly parking (-), easily approachable (+), events and city life (+)
+&lt;br /&gt;
+Suburbs - low cost of living including rents and grocery (+), free / cheap parking (+), travel time to Chicago city (-)
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;&lt;li&gt;Agents&lt;/li&gt;&lt;/b&gt;
+There are some very knowledgable agents who can help you find you the right apartment. What you need to do is call them, provide your budget, preferred location, office location, parking needs, schooling needs and the like. Just share whatever is your criteria and they will take care of the rest. They will necessarily short list 3-4 options, take appointments, drive you around the 4 places and help you select the one.
+P.S. Their service is free of cost, they charge the building management for their services on every apartment they help lease out. 
+I find it very cool!
+
+&lt;/ol&gt;
+
+&lt;p&gt;Once you finalize the apartment, below are some tips related to setting up your place:&lt;/p&gt;
+&lt;ol&gt;
+&lt;b&gt;&lt;li&gt;Renter&#39;s agreement&lt;/li&gt;&lt;/b&gt;
+Provide necessary documents - passport, visa and family details and the building authorities take care of creating the agreement. It is an electronic agreement, so you need to just go through it and sign electronically.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;&lt;li&gt;Renter&#39;s insurance&lt;/li&gt;&lt;/b&gt;
+It is a pre-requisite to take renters insurance before the possession is handed over to you. It costs around 25-30 USD and is straightforward. You can pick one of the insurance amount specified in your agreement.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;&lt;li&gt;Advance rent&lt;/li&gt;&lt;/b&gt;
+Prepare money order for the advance rent for the first month. I used US Postal service given that it was cheaper as compared to banks.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;&lt;li&gt;Necessities&lt;/li&gt;&lt;/b&gt;
+Buy a NEW Mattress and bed, refrain from buying a used one. Other furniture can be bought used through craigslist OR any local furniture store or website. Electronics like Smart TV as well can be bought used but I bought a new one (that&#39;s my preference).
+&lt;/ol&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Hope the above is helpful. If you have any other specific questions around settling in Chicago, drop me a note and I would be glad to help.&lt;/p&gt;
+
+
+    </content>
+  </entry>
   
   <entry>
     <title>Spark on YARN - Considerations and Configurations</title>
