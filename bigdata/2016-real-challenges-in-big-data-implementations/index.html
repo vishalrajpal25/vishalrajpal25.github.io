@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>2016 - Practical Challenges in Big Data Implementations • Vishal Rajpal</title>
+    <title>Big Data 2.016 - Practical implementation challenges • Vishal Rajpal</title>
     <meta name="description" content="Big data implementations - challenges beyond the hype">
     <meta name="keywords" content="Big data, hadoop, spark, challenges">
     
     	<!-- Twitter Cards -->
-	<meta name="twitter:title" content="2016 - Practical Challenges in Big Data Implementations">
+	<meta name="twitter:title" content="Big Data 2.016 - Practical implementation challenges">
 	<meta name="twitter:description" content="Big data implementations - challenges beyond the hype">
 	<meta name="twitter:site" content="@VishRajpal">
 	<meta name="twitter:creator" content="@VishRajpal">
@@ -18,7 +18,7 @@
 	<!-- Open Graph -->
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="2016 - Practical Challenges in Big Data Implementations">
+	<meta property="og:title" content="Big Data 2.016 - Practical implementation challenges">
 	<meta property="og:description" content="Big data implementations - challenges beyond the hype">
 	<meta property="og:url" content="http://vishalrajpal25.github.io/bigdata/2016-real-challenges-in-big-data-implementations/">
 	<meta property="og:site_name" content="Vishal Rajpal">
@@ -123,48 +123,59 @@
   </nav><!-- /.breadcrumbs -->
 
 		<div class="page-title">
-			<h1>2016 - Practical Challenges in Big Data Implementations</h1>
+			<h1>Big Data 2.016 - Practical implementation challenges</h1>
 		</div>
 		<div class="inner-wrap">
 			<div id="content" class="page-content" itemprop="articleBody">
-				<p>We are all aware of the journey of “Big data analytics” from inception until 2015. 
-As we start a new year 2016, there is a different set of challenges to overcome. These challenges are primarily related to productionizing Big data projects, a.k.a. leveraging the Big data infrastructure for value creation.</p>
+				<p>We have all witnessed the journey of “Big data” from inception until 2015. Big data got a fair share of attention and has passed through the hype cycle. In 2016, there is a different set of challenges that organizations need to overcome for realizing the true potential of Big data through analytics. These challenges are primarily related to implementation of Big Data projects.</p>
 
-<h5>Until 2015</h5>
-<p>By the end of 2015, most organizations would have already invested in some sort of (cloud or on-premises) Big data infrastructure.  They would have also initiated or completed a few proof-of-concept projects.
-The primary question that needs answer for the C-suite of these organizations (IMHO) is and would always be - “How do we scale the value beyond the 3 Vs?”.</p>
+<p><b>Until 2015</b></p>
 
-<h5>2016 &amp; beyond</h5>
-<p>2016 brings the new phase of advanced implementations to productionize analytical solutions in the Big data infrastructure.
-Below are few of the challenges that I think would be part of (atleast) the 2016 journey.</p>
+<p>By the end of 2015, most organizations would have already invested in some pilot Big data infrastructure (appliance, datacenter, hadoop, NoSQL store)  and might have executed a few proof-of-concept projects. These projects would have helped provide an idea about the complexity and investment required for implementing Big data projects.</p>
 
-<ul style="list-style-type:disc">
-  <h6><li>Strategy</li></h6>
-  Big data space is known to be very dynamic, with many moving parts. New tools / stores are launched frequently. Hadoop ecosystem itself is evolving everyday and there is a huge open source development community releasing new tools / features. 
-  In such an environment, organizations need to be very dynamic and need to re-visit their strategy more often. Also, ensuring internal teams build new skill-sets as they scale should also be part of the strategy in the near term.
-  <h6><li>Infrastructure</li></h6>
-  The concept of different environments is yet to mature for Big data ecosystem. There is definitely a need for separate environments for development, staging / testing and production, but the challenge would be to acquire, plug and commission the right infrastructure to roll out within the organization. There is a fair amount of estimation required to determine the workload  that the environment should support in a longer term, selecting versions of VMs' &amp; tools and also network layouts of these environments since they need to be integrated within the enterprise data centers and systems.
-  <h6><li>Security &amp; Governance</li></h6>
-  There are a few mechanisms available for securing the Big data environment - network, storage encryption and access related. Integrating the right tools with the enterprise directory along with the different authentication protocols needs investment of administrators and security team. Also, before we begin the ingestion of data in the environment, it is important to define the zones / governed areas for hosting data per the type - raw, mapped, processed, production runs and so on. The zones / folders defined need to be commissioned with appropriate policies based on access and applications.
-  <h6><li>Data availability</li></h6>
-  Making data available in the data lake for analysis has been one of the biggest challenges. With the fanciness of polygot persistence, this problem is not going to go away in the near future. Pulling data from system of records / RDBMS, data warehouse, raw files and MPP systems is a daunting task. Ingesting data from multiple sources / teams requires a lot of coordination and effort for project management to ensure smooth execution. The effort might require creation of external views in external systems to pull data in the cluster using ingestion tools. Also, if the analysis require maintaining a bitemporal view of the data (time slicing), it becomes much more difficult if the source systems do not have history of change or audits to maintain changes. This, in turn, might need additional efforts to create triggers and tables to maintain audit type changes.
-  <h6><li>Processes</li></h6>
-  There are multiple teams involved in the Big data environment. From administrators to data engineers, data analysts to data scientists and even IT developers, the need for clearly laid out processes is inevitable. Processes around new project initiation, data source pull, model development standards, data sharing and operationalization should be defined. Organization structure within an enterprise drives the processes being created and owners defined. 
-  <h6><li>Standardization</li></h6>
-  Data being available from disparate sources calls for standardization across data sharing, date formats, contact number formats, mapping logic, etc. Also, as data scientists develop models while IT operationalize, there should be standard ways to for identifier sanity checks, data quality checks, model construct development, scheduling and operationalization.
-  <h6><li>Consumption</li></h6>
-  Most analytics consumption happens within existing enterprise systems, since the model could be optimizing, predicting or enhancing some business functionality. Hence, it is imperative that the enterprise systems can easily communicate with the Big data infrastructure. This could be in a coupled way - FTP, RDBMS table or view OR could be de-coupled in the form of exposed ReST services (pull) or enterprise service messaging systems (push). 
-</ul>
+<p><b>2016 &amp; beyond</b></p>
 
-<h5>Closing</h5>
-<p>This is not an exhaustive list but some challenges I could think of or have known. 
-Despite the challenges, Big data is turning into a more mature and important component of enterprise systems. The adaptor of Big data analytics will definitely feel the difference versus the competition as they progress further in generating the ‘V’ALUE.</p>
+<p>2016 marks the phase of implementing advanced analytical solutions in the Big data infrastructure. This is the time when the business value from Big data is realized. Below are few of the challenges that would be part of (at least) the 2016 journey as the implementations become real.</p>
+<ol>
+<b><li>Infrastructure</li></b>
+As implementations are productionized, there arises a need for separate environments for development, staging / testing and production within enterprise systems. The challenge would be to acquire, plug and commission the right infrastructure to roll out within the organization. There is a fair amount of estimation required to determine the hardware (nodes / racks) based on the workload to be supported in the longer term. Along with the hardware, determining the appropriate versions of operating systems, VMs' and tools might take time and investment. Once the infrastructure and tools are determined, it needs to be integrated within the data centers and other existing enterprise systems.
+<br />
+<br />
+<b><li>Security &amp; Governance</li></b>
+There are mechanisms available for securing the Big data environment at various levels -  network, storage encryption and access. Integrating the security tools with the enterprise user directory and authentication protocols is challenging due to the maturity of the said security tools. Also, before we begin the ingestion of data in the environment, it is important to define the governed areas for hosting data per the type - raw, mapped, processed, production runs and so on. The defined zones need to be created with appropriate policies based on user / team and application access.
+<br />
+<br />
+<b><li>Data sourcing</li></b>
+Pulling data in the data lake for analysis has been one of the biggest challenges. Almost all analytic use cases use enterprise data. With the polygot persistence pattern, pulling data from system of record, data warehouse, raw files and MPP systems is a daunting task. Ingesting data from multiple sources / teams requires a lot of coordination and effort for project management to ensure smooth execution. The effort might require creation of external views in existing systems to enable data pull in the cluster using ingestion tools. Also, if the analysis require maintaining a bi-temporal view of the data (snapshots), it becomes much more difficult if the source systems do not have history of change or audits to maintain changes. 
+
+<br />
+<br />
+<b><li>Processes</li></b>
+Execution of Big data projects involves multiple teams (IT, data engineers, data analysts, data scientists, business owners) . Processes and handshakes are required to streamline project execution and avoid project delays.  Execution workflows need to be defined for project initiation, data source pull, model development standards, data sharing and operationalization. The organization structure within an enterprise drives the processes being created and owners of those processes.
+
+<br />
+<br />
+<b><li>Standardization</li></b>
+Data being available from disparate sources calls for standardization across data sharing, date formats, contact number formats, mapping logic, etc. There should be standard ways to for identifier sanity checks, data quality checks, model construct development, scheduling and operationalization.
+
+
+<br />
+<br />
+<b><li>Output Consumption</li></b>
+Big data analytics motivates near real-time consumption. The traditional file sharing of scores is no longer preferred. Applications require access to analytical outputs as they happen and also on a request basis. Based on the needs, new consumption patterns are defining different mechanisms - FTP, RDBMS store, exposed ReST services (pull) or enterprise service messaging systems (push). These consumption patterns bring along new integration challenges for Big data analytical outputs.
+<br />
+<br />
+<b><li>Skill sets</li></b>
+Big data tools are driven by open source development. This makes the tools and technologies very dynamic, with new versions and features launched frequently. Organizations need to train internal teams to adopt to newer paradigms of analytics development like distributed computing and near real time computation.
+
+</ol>
+<p>Big data analytics is becoming an integral part of decision making across various enterprises. Despite the challenges, implementation of Big data analytics is believed to be the key success criteria for organizations. It has always  been about the most important V - ‘V’ALUE.</p>
 
 
 				<hr />
 				<footer class="page-footer">
 					<div class="inline-btn">
-	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=2016%20-%20Practical%20Challenges%20in%20Big%20Data%20Implementations&amp;url=http://vishalrajpal25.github.io/bigdata/2016-real-challenges-in-big-data-implementations/&amp;via=VishRajpal" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Big%20Data%202.016%20-%20Practical%20implementation%20challenges&amp;url=http://vishalrajpal25.github.io/bigdata/2016-real-challenges-in-big-data-implementations/&amp;via=VishRajpal" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
 	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://vishalrajpal25.github.io/bigdata/2016-real-challenges-in-big-data-implementations/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
 	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=http://vishalrajpal25.github.io/bigdata/2016-real-challenges-in-big-data-implementations/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
 </div><!-- /.share-this -->
