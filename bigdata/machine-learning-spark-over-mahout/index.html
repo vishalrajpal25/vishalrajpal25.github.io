@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Machine Learning - Spark Over Mahout • Vishal Rajpal</title>
+    <meta name="description" content="Spark over Mahout - some advantages while developing">
+    <meta name="keywords" content="big data, bigdata, mahout, spark, apache spark, apache mahout, analytics">
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Machine Learning - Spark Over Mahout">
+	<meta name="twitter:description" content="Spark over Mahout - some advantages while developing">
+	<meta name="twitter:site" content="@VishRajpal">
+	<meta name="twitter:creator" content="@VishRajpal">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="http://vishalrajpal25.github.io/images/vishalrajpal_120x120.jpg">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Machine Learning - Spark Over Mahout">
+	<meta property="og:description" content="Spark over Mahout - some advantages while developing">
+	<meta property="og:url" content="http://vishalrajpal25.github.io/bigdata/machine-learning-spark-over-mahout/">
+	<meta property="og:site_name" content="Vishal Rajpal">
+
+    <link rel="canonical" href="http://vishalrajpal25.github.io/bigdata/machine-learning-spark-over-mahout/">
+
+    <link href="http://vishalrajpal25.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Vishal Rajpal Atom Feed">
+    <link href="http://vishalrajpal25.github.io/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="http://vishalrajpal25.github.io/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="http://vishalrajpal25.github.io/js/vendor/html5shiv.min.js"></script>
+      <script src="http://vishalrajpal25.github.io/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="js-body">
+    <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
+
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="http://vishalrajpal25.github.io/" class="site-title">Vishal Rajpal</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">Vishal Rajpal</a></li>
+	
+    
+    <li><a href="http://vishalrajpal25.github.io/connect/" >Connect</a></li>
+  
+    
+    <li><a href="http://vishalrajpal25.github.io/bigdata/" >Big Data</a></li>
+  
+    
+    <li><a href="http://vishalrajpal25.github.io/wellbeing/" >Well-being</a></li>
+  
+    
+    <li><a href="http://vishalrajpal25.github.io/diy/" >D-I-Y</a></li>
+  
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5>Vishal Rajpal <span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    <li>
+      <a href="http://vishalrajpal25.github.io/connect/">
+        
+        <div class="title">Connect</div>
+        
+      </a>
+    </li><li>
+      <a href="http://vishalrajpal25.github.io/bigdata/">
+        
+        <div class="title">Big Data</div>
+        
+      </a>
+    </li><li>
+      <a href="http://vishalrajpal25.github.io/wellbeing/">
+        
+        <div class="title">Well-being</div>
+        
+      </a>
+    </li><li>
+      <a href="http://vishalrajpal25.github.io/diy/">
+        
+        <div class="title">D-I-Y</div>
+        
+      </a>
+    </li>
+  </ul>
+</nav>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="nav-lines"></span>
+</button>
+
+<div id="js-menu-screen" class="menu-screen"></div>
+
+
+    <div id="page-wrapper">
+      <div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		
+		
+  <nav class="breadcrumbs">
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="http://vishalrajpal25.github.io" itemprop="url">
+        <span itemprop="title">Home</span>
+      </a> › 
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="http://vishalrajpal25.github.io/bigdata/" itemprop="url">
+        <span itemprop="title">Bigdata</span>
+      </a>
+    </span>
+  </nav><!-- /.breadcrumbs -->
+
+		<div class="page-title">
+			<h1>Machine Learning - Spark Over Mahout</h1>
+		</div>
+		<div class="inner-wrap">
+			<div id="content" class="page-content" itemprop="articleBody">
+				<p>I started my career writing code in Java. I definitely love the object oriented language and the GC support. I experienced the native side of Java while implementing few low latency high throughput applications at a financial institution. The power is immense.</p>
+<p>
+As I started developing machine learning models in Hadoop, Apache Mahout was my straight forward choice since it was natively implemented in Java. The problem I tried to solve was to build a recommendation system for users. Like any Java developer, I looked at the available API implementations and tried to map it to the algorithm I needed to use OR was advised to use. 
+<p>
+Today, Mahout has implementations availble across Spark, H2O and Flink. At the time while I was using Mahout, it had single machine and map reduce implementations.
+Mahout does have a very rich API for algorithm implementations across Collaborative Filtering, Classification, Clustering and even Dimensionality reduction, found <a href="https://mahout.apache.org/users/basics/algorithms.html" target="_blank">here</a>.
+I used the user based collaborative filtering with the cosine heuristic. The feedback was not explicit (ratings) but an implicit one (preference). Thus, I had to extend some of the implementation classes to customize for cosine similarity evaluation while generating the recommendation.
+<p>
+Once that completed, the recommendations were cooked in Mahout. The next time I used Spark to develop a analytical solutions. As I look back at the experiences while using Mahout and Spark, the reasons the makes Spark better at a tactical user level IMHO are:
+
+<ol>
+<li>Native language support</li>
+Mahout is entirely implemented in Java, hence any enhancements or extensions to the existing API needs to be done in Java. Spark on the other hand is implemented in Scala, but has an exposed API in Python, Java and R. This is a very important feature - I will give you two scenarios as example - 
+<ul>
+<li>Imagine while data pre-processing you need a function or feature which is implemented in R or python through their open source APIs. This feature may not be implemented in Java and thus cannot be leveraged in Mahout.</li>
+<li>During model operationalization, it is faster to develop, score and update using the same set of API through python or R.</li>
+</ul>
+<br /><br />
+<li>Development time</li>
+Through Python and Scala, Spark provides a command shell which is very handy during model development phase. You may need to pre-process data through multiple steps, try and re-iterate over steps and have the flexibility to test alternative options without re-compiling the code. Mahout does not have that flexibility since any code that you enhance needs to be re-compiled to be executed again. This takes a lot of time and I think Spark kills it there.
+<br /><br />
+<li>Debugging</li>
+While development, it is important to have the flexibility to debug, particularly when you are dealing with large scale data. Mahout code written in Java and may be running on Spark or Map reduce paradigm is difficult to debug. You may end up writing logs after each step in your java code and trust me, it is very difficult to debug distributed code. Spark provides compilation of every step and interpreter shell for each step, hence it becomes easy to find root cause of bugs faster.
+<br /><br />
+<li>Advancements</li>
+Spark has more contributors and the MLLib is maturing very fast. Other open source contributors are also building secondary libraries outside Spark for easier use, for example sparkit-learn which is a Spark based implementation of scikit-learn.
+</ol>
+These are all practical development advantages of Spark and have nothing to do with technical or architectural comparisons of map reduce or spark framework.
+</p></p></p>
+
+				<hr />
+				<footer class="page-footer">
+					<div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Machine%20Learning%20-%20Spark%20Over%20Mahout&amp;url=http://vishalrajpal25.github.io/bigdata/machine-learning-spark-over-mahout/&amp;via=VishRajpal" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://vishalrajpal25.github.io/bigdata/machine-learning-spark-over-mahout/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=http://vishalrajpal25.github.io/bigdata/machine-learning-spark-over-mahout/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+
+					<div class="page-meta">
+	<p>Updated <time datetime="2016-03-30T10:34:56Z" itemprop="datePublished">March 30, 2016</time></p>
+</div><!-- /.page-meta -->
+				</footer><!-- /.footer -->
+				<aside>
+					
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		
+	</article><!-- /.wrap -->
+</div><!-- /#main -->
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+			<li><a href="http://vishalrajpal25.github.io/" >Home</a></li>
+		
+      
+			<li><a href="http://vishalrajpal25.github.io/connect/" >Connect</a></li>
+		
+      
+			<li><a href="http://vishalrajpal25.github.io/credits/" >Credits</a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">Copyright &#169; 2016 <a href="http://vishalrajpal25.github.io">Vishal Kishanchand Rajpal</a>.</p>
+</footer>
+
+    </div>
+
+    <script src="http://vishalrajpal25.github.io/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="http://vishalrajpal25.github.io/js/main.js"></script>
+
+  </body>
+
+</html>

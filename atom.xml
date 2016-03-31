@@ -7,7 +7,7 @@
   <subtitle>Big data, Hadoop, Spark, moving to Chicago, fitness</subtitle>
   <link href="http://vishalrajpal25.github.io/atom.xml" rel="self"/>
   <link href="http://vishalrajpal25.github.io/" rel="alternate" type="text/html"/>
-  <updated>2016-03-23T13:48:45-05:00</updated>
+  <updated>2016-03-30T19:13:26-05:00</updated>
   <id>http://vishalrajpal25.github.io/</id>
   <author>
     <name>Vishal Rajpal</name>
@@ -15,6 +15,117 @@
     <email>vishalrajpal25@gmail.com</email>
   </author>
 
+  
+  <entry>
+    <title>Machine Learning - Spark Over Mahout</title>
+    <link href="http://vishalrajpal25.github.io/bigdata/machine-learning-spark-over-mahout/"/>
+    <updated>2016-03-30T10:34:56-05:00</updated>
+    <id>http://vishalrajpal25.github.io/bigdata/machine-learning-spark-over-mahout</id>
+    <author>
+      <name>Vishal Rajpal</name>
+      <uri>http://vishalrajpal25.github.io/</uri>
+      <email>vishalrajpal25@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;I started my career writing code in Java. I definitely love the object oriented language and the GC support. I experienced the native side of Java while implementing few low latency high throughput applications at a financial institution. The power is immense.&lt;/p&gt;
+&lt;p&gt;
+As I started developing machine learning models in Hadoop, Apache Mahout was my straight forward choice since it was natively implemented in Java. The problem I tried to solve was to build a recommendation system for users. Like any Java developer, I looked at the available API implementations and tried to map it to the algorithm I needed to use OR was advised to use. 
+&lt;p&gt;
+Today, Mahout has implementations availble across Spark, H2O and Flink. At the time while I was using Mahout, it had single machine and map reduce implementations.
+Mahout does have a very rich API for algorithm implementations across Collaborative Filtering, Classification, Clustering and even Dimensionality reduction, found &lt;a href=&quot;https://mahout.apache.org/users/basics/algorithms.html&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+I used the user based collaborative filtering with the cosine heuristic. The feedback was not explicit (ratings) but an implicit one (preference). Thus, I had to extend some of the implementation classes to customize for cosine similarity evaluation while generating the recommendation.
+&lt;p&gt;
+Once that completed, the recommendations were cooked in Mahout. The next time I used Spark to develop a analytical solutions. As I look back at the experiences while using Mahout and Spark, the reasons the makes Spark better at a tactical user level IMHO are:
+
+&lt;ol&gt;
+&lt;li&gt;Native language support&lt;/li&gt;
+Mahout is entirely implemented in Java, hence any enhancements or extensions to the existing API needs to be done in Java. Spark on the other hand is implemented in Scala, but has an exposed API in Python, Java and R. This is a very important feature - I will give you two scenarios as example - 
+&lt;ul&gt;
+&lt;li&gt;Imagine while data pre-processing you need a function or feature which is implemented in R or python through their open source APIs. This feature may not be implemented in Java and thus cannot be leveraged in Mahout.&lt;/li&gt;
+&lt;li&gt;During model operationalization, it is faster to develop, score and update using the same set of API through python or R.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;li&gt;Development time&lt;/li&gt;
+Through Python and Scala, Spark provides a command shell which is very handy during model development phase. You may need to pre-process data through multiple steps, try and re-iterate over steps and have the flexibility to test alternative options without re-compiling the code. Mahout does not have that flexibility since any code that you enhance needs to be re-compiled to be executed again. This takes a lot of time and I think Spark kills it there.
+&lt;br /&gt;&lt;br /&gt;
+&lt;li&gt;Debugging&lt;/li&gt;
+While development, it is important to have the flexibility to debug, particularly when you are dealing with large scale data. Mahout code written in Java and may be running on Spark or Map reduce paradigm is difficult to debug. You may end up writing logs after each step in your java code and trust me, it is very difficult to debug distributed code. Spark provides compilation of every step and interpreter shell for each step, hence it becomes easy to find root cause of bugs faster.
+&lt;br /&gt;&lt;br /&gt;
+&lt;li&gt;Advancements&lt;/li&gt;
+Spark has more contributors and the MLLib is maturing very fast. Other open source contributors are also building secondary libraries outside Spark for easier use, for example sparkit-learn which is a Spark based implementation of scikit-learn.
+&lt;/ol&gt;
+These are all practical development advantages of Spark and have nothing to do with technical or architectural comparisons of map reduce or spark framework.
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
+
+    </content>
+  </entry>
+  
+  <entry>
+    <title>Hadoop Data Loading - The Beauty in Sqoop&#39;ing&#39;</title>
+    <link href="http://vishalrajpal25.github.io/bigdata/hadoop-data-loading-the-beauty-in-sqooping/"/>
+    <updated>2016-03-30T10:32:59-05:00</updated>
+    <id>http://vishalrajpal25.github.io/bigdata/hadoop-data-loading-the-beauty-in-sqooping</id>
+    <author>
+      <name>Vishal Rajpal</name>
+      <uri>http://vishalrajpal25.github.io/</uri>
+      <email>vishalrajpal25@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;Almost all analytic use cases utilize internal enterprise data, which is stored in traditional relational database. The enterprise data from the relational store needs to be pulled to Hadoop for model development as well as during operationalization for ongoing scoring.&lt;/p&gt;
+&lt;p&gt;
+Apache Sqoop(TM) is a tool designed for efficiently transferring bulk data between Apache Hadoop and structured datastores such as relational databases. Sqoop is fast since it pulls and loads data in parallel using the map reduce framework, i.e. mapper and reducer jobs are launched to pull data in splits from the relational store and load it in parallel in HDFS. It can load data either in HDFS or directly create table in Hive based on the schema in the source database. It can connect to any database platform having a jdbc driver available. I feel the open source community have done great work in creating Sqoop and the features that it has through the properties. It is one of the most important tools in a enterprise Big data technology stack from an open source perspective (unless a proprietary ELT tool has not been acquired / invested)
+&lt;p&gt;
+For the remaining part of the post, I will share an example of loading data from Microsoft SQL server to Hadoop HDFS in avro format. The data can be directly loaded in Hive warehouse as well, but Sqoop does not support Hive table creation with underlying avro format data. Either the data is loaded in HDFS in avro format OR one can create a hive table with underlying data in Text format.
+
+Sqoop command used for loading data from MS-SQL to HDFS in avro format:
+&lt;code&gt;
+sqoop import --connect &quot;jdbc:jtds:sqlserver://&amp;lt;HOSTNAME&amp;gt;:&amp;lt;PORT&amp;gt;;userNTLMv2=true;domain=&amp;lt;DOMAIN&amp;gt;;database=&amp;lt;DBNAME&amp;gt;&quot;&lt;br /&gt; --username &amp;lt;user&amp;gt; --driver &#39;net.sourceforge.jtds.jdbc.Driver&#39; -e &amp;lt;QUERY&amp;gt; --as-avrodatafile --target-dir &amp;lt;HDFS_TARGET_DIR&amp;gt; &lt;br /&gt;--split-by &amp;lt;column_name&amp;gt;--class-name &amp;lt;NAME_OF_FILE&amp;gt; --map-column-java &amp;lt;column=type&amp;gt;
+&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Let&#39;s look at the important properties and tweaks:
+&lt;ol&gt;
+&lt;li&gt;Connect String for MS-SQL (--connect)&lt;/li&gt;
+Hostname and port are pretty standard information for connecting to the database. Now if you are connecting to a MSSQL server configured withh Windows authentication, you need to configure the property userNTLMv2=true and provide the domain name through domain=DOMAIN. Also, ensure to use the jtds jdbc driver and not the SQL JDBC driver for MS-SQL. Download the jar and ensure that it is available in the classpath for the Sqoop bin command.
+&lt;br /&gt;&lt;br /&gt;
+&lt;li&gt;Driver&lt;/li&gt;
+As mentioned above, in case you have windows authentication for the database connection, use the jtds driver through --driver &#39;net.sourceforge.jtds.jdbc.Driver&#39;.
+&lt;br /&gt;&lt;br /&gt;
+&lt;li&gt;Format&lt;/li&gt;
+Import the data as avro format using --as-avrodatafile.
+&lt;br /&gt;&lt;br /&gt;
+&lt;li&gt;Split by&lt;/li&gt;
+Sqoop splits the data import based on a particular column. Identify the column which will produce equal number of splits, in other words is well distributed to enable the input data be broken into chunks that can be handled by each mapper. For example, I used the date field as the split by column. Sqoop evaluate the total number of splits required based on the min and max values and launches the number of mappers to import the data in parallel. This is a very important property. Alternatively, you can provide Sqoop a query that evaluates min and max type int for determining the splits through property --boundary-query. 
+&lt;br /&gt;&lt;br /&gt;
+&lt;li&gt;map-column-java&lt;/li&gt;
+Key value combination of column name and java type to be cast as while importing.
+&lt;/ol&gt;
+There are other properties as well based on the source database and destination in Hadoop. 
+
+&lt;p&gt;
+Once the data is imported in HDFS as avro format, a schema file is also generated along with it. The name of the file is the class-name property value provided to the Sqoop import command. The extension is avsc.
+&lt;p&gt;
+Push the avro schema file to a HDFS file directory using command:
+&lt;code&gt;hdfs -put &amp;lt;avro_file.avsc&amp;gt; &amp;lt;HDFS_DIR&amp;gt;&lt;/code&gt;
+&lt;p&gt;
+OR
+&lt;p&gt;
+&lt;code&gt;hdfs -copyFromLocal &amp;lt;avro_file.avsc&amp;gt; &amp;lt;HDFS_DIR&amp;gt;&lt;/code&gt;
+&lt;p&gt;
+Create Hive table using the avro data file and avro schema file:
+&lt;code&gt;CREATE EXTERNAL TABLE TABLENAME
+ROW FORMAT SERDE &#39;org.apache.hadoop.hive.serde2.avro.AvroSerDe&#39; &lt;br /&gt;
+STORED AS AVRO
+LOCATION &#39;hdfs://&amp;lt;AVRO_DATA_FILE&amp;gt;&#39;
+TBLPROPERTIES (&#39;avro.schema.url&#39;=&#39;&amp;lt;AVRO_SCHEMA_FILE.avsc&amp;gt;&#39;);
+&lt;/code&gt;
+&lt;p&gt;
+Happy Sqoop&#39;ing&#39;!
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
+
+    </content>
+  </entry>
   
   <entry>
     <title>Beat Your Sedentary Lifestyle</title>
