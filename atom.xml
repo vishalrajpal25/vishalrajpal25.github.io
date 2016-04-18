@@ -7,7 +7,7 @@
   <subtitle>Big data, Hadoop, Spark, moving to Chicago, fitness</subtitle>
   <link href="http://vishalrajpal25.github.io/atom.xml" rel="self"/>
   <link href="http://vishalrajpal25.github.io/" rel="alternate" type="text/html"/>
-  <updated>2016-03-31T16:50:40-05:00</updated>
+  <updated>2016-04-17T22:59:49-05:00</updated>
   <id>http://vishalrajpal25.github.io/</id>
   <author>
     <name>Vishal Rajpal</name>
@@ -15,6 +15,75 @@
     <email>vishalrajpal25@gmail.com</email>
   </author>
 
+  
+  <entry>
+    <title>Data, Model, Score, Decision - Time-to-market for Big Data Analytics</title>
+    <link href="http://vishalrajpal25.github.io/bigdata/data-model-score-decision-time-to-market-for-big-data-analytics/"/>
+    <updated>2016-04-17T22:32:35-05:00</updated>
+    <id>http://vishalrajpal25.github.io/bigdata/data-model-score-decision-time-to-market-for-big-data-analytics</id>
+    <author>
+      <name>Vishal Rajpal</name>
+      <uri>http://vishalrajpal25.github.io/</uri>
+      <email>vishalrajpal25@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;One of the known challenges for Big data analytics has been the time-to-market OR production deployment of analytical models and solutions.&lt;/p&gt;
+
+&lt;h3&gt;What does that mean:&lt;/h3&gt;
+
+&lt;p&gt;Organizations have multiple problems to solve which impact their bottom and top-line. Various analytical solutions (descriptive and predictive) are developed to optimize their operations. Once these solutions are ready to predict the best possible business outcomes, the next step is to operationalize them in a production environment. These solutions can then learn as well as predict on an ongoing basis at a predetermined frequency. This frequency could be yearly, daily, monthly or even near real-time (as the data comes in) basis.
+The challenge:&lt;/p&gt;
+
+&lt;p&gt;Different departments and teams (internal and external) within an organization develop these solutions using their platform of choice. They have their own standards to write the solution code.
+To summarize, the differences lie in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Platform / technology for the model development&lt;/li&gt;
+&lt;li&gt;Data pull standard&lt;/li&gt;
+&lt;li&gt;Data pre-processing mechanism&lt;/li&gt;
+&lt;li&gt;Output score generation&lt;/li&gt;
+&lt;li&gt;Output publishing for decision making and consumption&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These differences give rise to the challenge of deploying unrelated and complex models in production. In certain cases, it has been observed that the time to deploy and enhance a model has been equal to the time it took to build the model. A large investment of time and money is needed before the solutions can really start producing the value they were built for.&lt;/p&gt;
+
+&lt;h3&gt;So what can be done:&lt;/h3&gt;
+&lt;p&gt;Analytics operationalization can be made faster and efficient through a combination of automation, processes and practices.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;b&gt;&lt;li&gt;Input data pipeline&lt;/li&gt;&lt;/b&gt;
+
+The data pulled to build a model in Hadoop, SAS, python or R is generally a subset of the overall data. Thus, IT or data science team pull the data in an ad-hoc manner without following any standards. There should be a pipeline mechanism developed at the start of the first pulls so that subsequent pulls - whether meant for development or ongoing prediction can be configured. This saves a lot of time since a new data source pull can easily be configured rather than developed from scratch. Investing in a long-term data pipeline pays off as the number of data sources and analytic solutions increase.
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;&lt;li&gt;Code practices&lt;/li&gt;&lt;/b&gt;
+It is very important that data scientists, engineers and IT team members develop code which can easily be deployed. Leaders should motivate team members to follow standard practices like using parameters wherever possible from the early stages of code development. Some standard parameters could be date, month, year, environment, output, etc.
+This practice can save a lot of time and effort once the models are ready to be productized. 
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;&lt;li&gt;Framework for operationalization&lt;/li&gt;&lt;/b&gt;
+
+An operationalization framework helps drive faster deployments of models and analytic solutions.
+This framework should provide the flexibility to configure :
+&lt;ul&gt;
+&lt;li&gt;input data pipelines&lt;/li&gt;
+&lt;li&gt;save and re-load models&lt;/li&gt;
+&lt;li&gt;save and load meta-data&lt;/li&gt;
+&lt;li&gt;configure and run rules (like a rules engine)&lt;/li&gt;
+&lt;li&gt;publish the output to multiple enterprise systems like databases, ERP systems or even enterprise message bus&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/ol&gt;
+
+&lt;h3&gt;Existing tools&lt;/h3&gt;
+
+&lt;p&gt;Apache Oozie is a great job and workflow scheduling tool. It provides the flexibility to configure varied types of jobs like Hive, python, spark, hive, shell to name a few. But with greater flexibility comes larger responsibility for the analysts. Each analyst needs to develop their own data sourcing, model re-load and output push mechanism. Building a framework as proposed above, all the repetitive and important steps can be standardized, thus helping save valuable resources.&lt;/p&gt;
+
+&lt;p&gt;Eventually, the “V”ALUE generation is efficient and achieved faster.&lt;/p&gt;
+
+&lt;p&gt;In the next series of posts, we will take a detailed look at a proposed design of the operationalization framework. We will also try socialize the design with the Apache Oozie community for their consideration and feedback.&lt;/p&gt;
+
+    </content>
+  </entry>
   
   <entry>
     <title>Machine Learning - Spark Over Mahout</title>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://vishalrajpal25.github.io/bigdata/data-model-score-decision-time-to-market-for-big-data-analytics/</loc>
+<lastmod>2016-04-17T22:32:35-05:00</lastmod>
+</url>
+<url>
 <loc>http://vishalrajpal25.github.io/bigdata/machine-learning-spark-over-mahout/</loc>
 <lastmod>2016-03-30T10:34:56-05:00</lastmod>
 </url>
