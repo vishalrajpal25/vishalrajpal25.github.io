@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Connect on Vishal Rajpal</title>
-    <link>http://example.org/contact/</link>
+    <link>https://vishalrajpal25.github.io/contact/</link>
     <description>Recent content in Connect on Vishal Rajpal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Jul 2018 17:09:20 +0600</lastBuildDate>
     
-	<atom:link href="http://example.org/contact/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://vishalrajpal25.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

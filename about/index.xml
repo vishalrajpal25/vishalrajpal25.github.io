@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Vishal Rajpal</title>
-    <link>http://example.org/about/</link>
+    <link>https://vishalrajpal25.github.io/about/</link>
     <description>Recent content in Abouts on Vishal Rajpal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Jul 2018 17:09:20 +0600</lastBuildDate>
     
-	<atom:link href="http://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://vishalrajpal25.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About - Vishal Rajpal</title>
-      <link>http://example.org/about/_about/</link>
+      <link>https://vishalrajpal25.github.io/about/_about/</link>
       <pubDate>Sat, 14 Jul 2018 17:09:20 +0600</pubDate>
       
-      <guid>http://example.org/about/_about/</guid>
+      <guid>https://vishalrajpal25.github.io/about/_about/</guid>
       <description></description>
     </item>
     
