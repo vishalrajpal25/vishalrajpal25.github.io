@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analytics on Vishal Rajpal</title>
+    <link>http://example.org/tags/analytics/</link>
+    <description>Recent content in analytics on Vishal Rajpal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jun 2016 15:28:38 +0600</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spark on Yarn Configurations</title>
+      <link>http://example.org/tech/spark_yarn_configs_4/</link>
+      <pubDate>Thu, 16 Jun 2016 15:28:38 +0600</pubDate>
+      
+      <guid>http://example.org/tech/spark_yarn_configs_4/</guid>
+      <description>Spark on YARN - Considerations and Configurations About Spark Apache Spark™ is a DAG based execution engine for large-scale data processing. It has in-memory processing capabilities making it faster as compared to other execution engines. Spark boasts ease of use and generality through native language support (R, Scala, Python, Java ) and SQL &amp;amp; streaming analytics respectively.
+Spark on Yarn Spark runs on Hadoop (YARN), Mesos, standalone, or in the cloud.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning - Spark Over Mahout</title>
+      <link>http://example.org/tech/spark_over_mahout_3/</link>
+      <pubDate>Sun, 08 Nov 2015 01:32:38 +0600</pubDate>
+      
+      <guid>http://example.org/tech/spark_over_mahout_3/</guid>
+      <description>Machine Learning - Spark Over Mahout I started my career writing code in Java. I definitely love the object oriented language and the GC support. I experienced the native side of Java while implementing few low latency high throughput applications at a financial institution. The power is immense.
+As I started developing machine learning models in Hadoop, Apache Mahout was my straight forward choice since it was natively implemented in Java.</description>
+    </item>
+    
+    <item>
+      <title>Time to market for Big Data Analytics</title>
+      <link>http://example.org/tech/time_to_market_2/</link>
+      <pubDate>Thu, 13 Aug 2015 12:27:38 +0600</pubDate>
+      
+      <guid>http://example.org/tech/time_to_market_2/</guid>
+      <description>Data, Model, Score, Decision - Time-to-market for Big Data Analytics One of the known challenges for Big data analytics has been the time-to-market OR production deployment of analytical models and solutions.
+What does that mean: Organizations have multiple problems to solve which impact their bottom and top-line. Various analytical solutions (descriptive and predictive) are developed to optimize their operations. Once these solutions are ready to predict the best possible business outcomes, the next step is to operationalize them in a production environment.</description>
+    </item>
+    
+    <item>
+      <title>Big Data 2016 Challenges</title>
+      <link>http://example.org/tech/challenges_big_data_1/</link>
+      <pubDate>Mon, 15 Jun 2015 12:27:38 +0600</pubDate>
+      
+      <guid>http://example.org/tech/challenges_big_data_1/</guid>
+      <description>Big Data 2.016 - Practical implementation challenges We have all witnessed the journey of “Big data” from inception until 2015. Big data got a fair share of attention and has passed through the hype cycle. In 2016, there is a different set of challenges that organizations need to overcome for realizing the true potential of Big data through analytics. These challenges are primarily related to implementation of Big Data projects.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   
-  <meta name="description" content="Vishal Rajpal - personal space">
+  <meta name="description" content="Machine Learning - Spark Over Mahout">
   <meta name="author" content="Vishal Rajpal">
   <meta name="generator" content="Hugo 0.71.1" />
   
   <!-- Mobile Specific Metas -->
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vishal Rajpal</title>
+  <title>Machine Learning - Spark Over Mahout</title>
   <link rel="icon" href="http://example.org/images/favicon.ico">
 
   <!-- Twitter Bootstrs CSS -->
@@ -73,87 +73,56 @@
 	</div>
 </section>
 
-
-<!-- Slider Section Start -->
-<section id="hero-area" style='background-image: url("http://example.org/images/banner.png");'>
+<section class="global-page-header">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <div class="block wow fadeInUp" data-wow-delay=".3s">
-                    <!-- Slider -->
-                    <section class="cd-intro">
-                        <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
-                            <span>Space to log and share</span>
-                            <br>
-                            <span class="cd-words-wrapper">
-                                
-                                    
-                                    <b class="is-visible">Data Ops, ML Engineering &amp; Cloud</b>
-                                    
-                                
-                                    
-                                    <b>Fitness</b>
-                                    
-                                
-                                    
-                                    <b>Parenting</b>
-                                    
-                                
-                            </span>
-                        </h1>
-                    </section>
-                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s">Involved parent, consultant, principal engineer and outdoor enthusiast</h2>
-                                        
-                        <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right" data-wow-delay=".9s"
-                            href="https://vishalrajpal25.github.io/" target="_blank">Visit Blog</a>
-                    
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Machine Learning - Spark Over Mahout</h2>
+                    <div class="portfolio-meta">
+                        <span>Sunday, Nov 8, 2015</span>|
+                        <span> Tags:
+                            data, analytics, tech
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Slider Section End -->
 
-
-
-<!-- About Section Start -->
-<section id="about">
+<section class="single-post">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-                    <h2>ABOUT ME</h2>
-                    <p>Hello, I’m a Principal Data Engineer at an advanced analytics (consulting) firm. I specialize in cloud, ML Ops, Data engineering, and Technology.  <br> <br> I enjoy time with my son and learn with him each day. <br> <br> As an fitness enthusiast, I enjoy training in basketball, swimming and tennis. <br> <br> <b> *Views are my own.* <b></p>
+            <div class="col-md-12">
+                
+                <div class="post-img">
+                    <img class="img-fluid" alt="" src="http://example.org/images/data_tech/spark_mahout_3.jpg">
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                    <img src="http://example.org/images/vishalrajpal.png" alt="about-image">
+                
+                <div class="post-content">
+                    <h3 id="machine-learning---spark-over-mahout">Machine Learning - Spark Over Mahout</h3>
+<p>I started my career writing code in Java. I definitely love the object oriented language and the GC support. I experienced the native side of Java while implementing few low latency high throughput applications at a financial institution. The power is immense.</p>
+<p>As I started developing machine learning models in Hadoop, Apache Mahout was my straight forward choice since it was natively implemented in Java. The problem I tried to solve was to build a recommendation system for users. Like any Java developer, I looked at the available API implementations and tried to map it to the algorithm I needed to use OR was advised to use.</p>
+<p>Today, Mahout has implementations availble across Spark, H2O and Flink. At the time while I was using Mahout, it had single machine and map reduce implementations. Mahout does have a very rich API for algorithm implementations across Collaborative Filtering, Classification, Clustering and even Dimensionality reduction, found here. I used the user based collaborative filtering with the cosine heuristic. The feedback was not explicit (ratings) but an implicit one (preference). Thus, I had to extend some of the implementation classes to customize for cosine similarity evaluation while generating the recommendation.</p>
+<p>Once that completed, the recommendations were cooked in Mahout. The next time I used Spark to develop a analytical solutions. As I look back at the experiences while using Mahout and Spark, the reasons the makes Spark better at a tactical user level IMHO are:</p>
+<p><strong>1. Native language support</strong>
+Mahout is entirely implemented in Java, hence any enhancements or extensions to the existing API needs to be done in Java. Spark on the other hand is implemented in Scala, but has an exposed API in Python, Java and R. This is a very important feature - I will give you two scenarios as example -
+Imagine while data pre-processing you need a function or feature which is implemented in R or python through their open source APIs. This feature may not be implemented in Java and thus cannot be leveraged in Mahout.
+During model operationalization, it is faster to develop, score and update using the same set of API through python or R.</p>
+<p><strong>2. Development time</strong>
+Through Python and Scala, Spark provides a command shell which is very handy during model development phase. You may need to pre-process data through multiple steps, try and re-iterate over steps and have the flexibility to test alternative options without re-compiling the code. Mahout does not have that flexibility since any code that you enhance needs to be re-compiled to be executed again. This takes a lot of time and I think Spark kills it there.</p>
+<p><strong>3. Debugging</strong>
+While development, it is important to have the flexibility to debug, particularly when you are dealing with large scale data. Mahout code written in Java and may be running on Spark or Map reduce paradigm is difficult to debug. You may end up writing logs after each step in your java code and trust me, it is very difficult to debug distributed code. Spark provides compilation of every step and interpreter shell for each step, hence it becomes easy to find root cause of bugs faster.</p>
+<p><strong>Advancements</strong>
+Spark has more contributors and the MLLib is maturing very fast. Other open source contributors are also building secondary libraries outside Spark for easier use, for example sparkit-learn which is a Spark based implementation of scikit-learn.
+These are all practical development advantages of Spark and have nothing to do with technical or architectural comparisons of map reduce or spark framework.</p>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- About Section End -->
-
-
-
-<!-- Portfolio Section Start -->
-<section id="works" class="works">
-    <div class="container">
-        <div class="section-heading">
-            <h1 class="title wow fadeInDown" data-wow-delay=".3s">Latest Works</h1>
-            <p class="wow fadeInDown" data-wow-delay=".5s">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
-        </div>
-        <div class="row">
-            
-        </div>
-    </div>
-</section>
-<!-- Portfolio Section End -->
-
-
-
 
 
 <!-- Call To Action Section Start -->
