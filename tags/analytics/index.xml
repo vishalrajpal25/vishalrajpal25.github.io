@@ -6,10 +6,21 @@
     <description>Recent content in analytics on Vishal Rajpal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2020 12:27:38 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2020 12:27:38 +0600</lastBuildDate>
     
 	<atom:link href="https://vishalrajpal25.github.io/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The rising relevance of Cloud Native Programming</title>
+      <link>https://vishalrajpal25.github.io/tech/importance_of_cloud_native/</link>
+      <pubDate>Fri, 12 Jun 2020 12:27:38 +0600</pubDate>
+      
+      <guid>https://vishalrajpal25.github.io/tech/importance_of_cloud_native/</guid>
+      <description>I got to learn about Cloud Native Computing Foundation as I was browsing through Helm. From CNCF website:
+The Cloud Native Computing Foundation (CNCF) hosts critical components of the global technology infrastructure. CNCF brings together the world’s top developers, end users, and vendors and runs the largest open source developer conferences. CNCF is part of the nonprofit Linux Foundation.
+It is also important to understand the meaning of cloud native computing and what the approach covers / recommends.</description>
+    </item>
     
     <item>
       <title>Knowledge base: Graph systems</title>
