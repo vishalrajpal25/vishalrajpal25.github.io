@@ -6,10 +6,23 @@
     <description>Recent content in analytics on Vishal Rajpal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jun 2020 12:27:38 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 12:27:38 +0600</lastBuildDate>
     
 	<atom:link href="https://vishalrajpal25.github.io/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes and gist: Pythonic Programming</title>
+      <link>https://vishalrajpal25.github.io/tech/pythonic_programming/</link>
+      <pubDate>Mon, 06 Jul 2020 12:27:38 +0600</pubDate>
+      
+      <guid>https://vishalrajpal25.github.io/tech/pythonic_programming/</guid>
+      <description>Pythonic Programming PEP20 - The zen of python https://www.python.org/dev/peps/pep-0020/
+Tuples Tuple is immutable, list is a mutable. Unpacking a tuple Use * for unpacking for function arguments
+Sorting functions
+Lambda functions Short cut function definition, useful for functions used only in one place, frequently passed as parameters to other functions. Also, referred to as callbacks.
+List comprehensions [x for x in list] It is a python idiom that creates a shortcut for a for loop.</description>
+    </item>
     
     <item>
       <title>The rising relevance of Cloud Native Programming</title>
