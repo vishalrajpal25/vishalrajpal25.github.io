@@ -1,0 +1,89 @@
+# Site settings
+title: "Vishal Rajpal"
+subtitle: "AI & Enterprise Platform Engineering Leader"  
+email: vishalrajpal25@gmail.com
+description: >-
+  Hands-on technology leader with 20+ years of experience in AI, cloud, and data engineering.
+  Consulting Fortune 500 companies globally on enterprise AI transformation and agentic AI implementation.
+
+baseurl: ""
+url: "https://vishalrajpal25.github.io"
+
+# Author information
+author:
+  name: "Vishal Kishanchand Rajpal"
+  title: "Head of Platform Forward Deployed Engineer, Cogentiq"
+  company: "Fractal Analytics"
+  location: "Los Altos / Palo Alto, CA" 
+  phone: "+1.650.305.9747"
+  email: "vishalrajpal25@gmail.com"
+  linkedin: "linkedin.com/in/rajpalvishal"
+  github: "github.com/vishalrajpal25"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Theme settings
+theme_color: "#0066cc"
+accent_color: "#ff6b35"
+success_color: "#00cc88"
+
+# Navigation
+header_pages:
+  - about.md
+  - services.md  
+  - contact.md
+
+# Social links
+social_links:
+  linkedin: "https://linkedin.com/in/rajpalvishal"
+  github: "https://github.com/vishalrajpal25"
+
+# SEO
+lang: en_US
+twitter:
+  username: vishalrajpal25
+  card: summary_large_image
+
+# Services configuration
+services:
+  - title: "Investment Due Diligence"
+    description: "Technical evaluation of AI startups for VC/PE firms"
+    price: "$15K - $25K"
+    timeline: "48-72 hours"
+    icon: "search-dollar"
+    
+  - title: "AI Transformation Consulting" 
+    description: "End-to-end AI strategy and implementation"
+    price: "$25K - $200K+"
+    timeline: "2-6 months"
+    icon: "rocket"
+    
+  - title: "Fractional CTO/AI Officer"
+    description: "Strategic technology leadership"
+    price: "$5K - $25K/month"
+    timeline: "Ongoing"
+    icon: "user-tie"
+
+# Stats for homepage
+stats:
+  - number: "20+"
+    label: "Years Experience"
+  - number: "500+"  
+    label: "Fortune 500 Clients"
+  - number: "$200M+"
+    label: "Value Delivered"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/

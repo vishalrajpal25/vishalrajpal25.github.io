@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+    
+    {% seo %}
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="{{ '/' | relative_url }}" class="nav-logo">
+                {{ site.author.name }}
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                {% for page in site.header_pages %}
+                    {% assign page_path = page | remove: '.md' %}
+                    <a href="{{ page_path | prepend: '/' | relative_url }}" class="nav-link">
+                        {{ page | remove: '.md' | capitalize }}
+                    </a>
+                {% endfor %}
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>{{ site.author.name }}</h4>
+                    <p>{{ site.description | strip_html | truncate: 100 }}</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> {{ site.author.email }}</p>
+                    <p><i class="fas fa-phone"></i> {{ site.author.phone }}</p>
+                    <p><i class="fas fa-map-marker-alt"></i> {{ site.author.location }}</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        {% for link in site.social_links %}
+                            <a href="{{ link[1] }}" target="_blank" rel="noopener">
+                                <i class="fab fa-{{ link[0] }}"></i>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
