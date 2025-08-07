@@ -1,0 +1,16 @@
+<!-- Google Analytics (replace GA_MEASUREMENT_ID with your actual ID) -->
+{% if site.google_analytics %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta itemprop="description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+<meta itemprop="image" content="{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg">

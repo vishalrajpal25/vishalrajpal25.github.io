@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+    <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg">
+    <meta name="twitter:creator" content="@{{ site.twitter.username }}">
     
     {% seo %}
+    
+    <!-- Structured Data -->
+    {% include structured-data.html %}
+    
+    <!-- Analytics -->
+    {% include analytics.html %}
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
@@ -47,13 +70,8 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>{{ site.author.name }}</h4>
-                    <p>{{ site.description | strip_html | truncate: 100 }}</p>
-                </div>
-                
+        <div class="container" style="padding-left: 1rem; padding-right: 1rem;">
+            <div class="footer-content" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p><i class="fas fa-envelope"></i> {{ site.author.email }}</p>
@@ -61,19 +79,23 @@
                     <p><i class="fas fa-map-marker-alt"></i> {{ site.author.location }}</p>
                 </div>
                 
-                <div class="footer-section">
+                <div class="footer-section" style="text-align: right;">
                     <h4>Connect</h4>
-                    <div class="social-links">
+                    <div class="social-links" style="justify-content: flex-end;">
                         {% for link in site.social_links %}
                             <a href="{{ link[1] }}" target="_blank" rel="noopener">
+                                {% if link[0] == 'twitter' %}
+                                <i class="fab fa-x-twitter"></i>
+                                {% else %}
                                 <i class="fab fa-{{ link[0] }}"></i>
+                                {% endif %}
                             </a>
                         {% endfor %}
                     </div>
                 </div>
             </div>
             
-            <div class="footer-bottom">
+            <div style="text-align: center;">
                 <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
             </div>
         </div>

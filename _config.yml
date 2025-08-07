@@ -1,73 +1,94 @@
 # Site settings
-title: "Vishal Rajpal"
-subtitle: "AI & Enterprise Platform Engineering Leader"  
+title: "Vishal Rajpal - Enterprise AI Engineering Leader"
+subtitle: "Enterprise AI Engineering"  
 email: vishalrajpal25@gmail.com
 description: >-
-  Hands-on technology leader with 20+ years of experience in AI, cloud, and data engineering.
-  Consulting Fortune 500 companies globally on enterprise AI transformation and agentic AI implementation.
+  Vishal Rajpal - Enterprise AI Engineering Leader with 20+ years of experience in AI transformation, 
+  cloud architecture, and strategic technology consulting. Specializing in investment due diligence, 
+  agentic AI implementation, and enterprise technology leadership for Fortune 500 companies.
 
 baseurl: ""
 url: "https://vishalrajpal25.github.io"
 
+# SEO and Social Media
+logo: "/assets/images/profile.jpg"
+twitter:
+  username: "Virajpal"
+  card: "summary_large_image"
+facebook:
+  app_id: ""
+  publisher: ""
+social:
+  name: "Vishal Rajpal"
+  links:
+    - "https://linkedin.com/in/rajpalvishal"
+    - "https://github.com/virajpal25"
+    - "https://twitter.com/Virajpal"
+
+# Keywords for SEO
+keywords: "AI engineering, enterprise AI, technology consulting, investment due diligence, cloud architecture, agentic AI, MLOps, digital transformation"
+
 # Author information
 author:
-  name: "Vishal Kishanchand Rajpal"
-  title: "Head of Platform Forward Deployed Engineer, Cogentiq"
+  name: "Vishal Rajpal"
+  title: "Enterprise AI Engineering"
   company: "Fractal Analytics"
-  location: "Los Altos / Palo Alto, CA" 
+  location: "San Francisco / Palo Alto, CA" 
   phone: "+1.650.305.9747"
   email: "vishalrajpal25@gmail.com"
   linkedin: "linkedin.com/in/rajpalvishal"
-  github: "github.com/vishalrajpal25"
+  github: "github.com/virajpal25"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+
+# GitHub Pages safe plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Theme settings
-theme_color: "#0066cc"
-accent_color: "#ff6b35"
-success_color: "#00cc88"
+# Google Analytics (uncomment and add your GA4 measurement ID)
+# google_analytics: G-XXXXXXXXXX
+
+# Additional SEO settings
+lang: en_US
+timezone: America/Los_Angeles
+
+# Blog settings
+show_excerpts: true
+paginate: 6
+paginate_path: "/blogs/page:num/"
 
 # Navigation
 header_pages:
   - about.md
-  - services.md  
+  - specializations.md
+  - blogs.md
   - contact.md
 
 # Social links
 social_links:
   linkedin: "https://linkedin.com/in/rajpalvishal"
-  github: "https://github.com/vishalrajpal25"
+  github: "https://github.com/virajpal25"
+  twitter: "https://twitter.com/Virajpal"
 
-# SEO
-lang: en_US
-twitter:
-  username: vishalrajpal25
-  card: summary_large_image
-
-# Services configuration
-services:
+# Specializations configuration
+specializations:
   - title: "Investment Due Diligence"
     description: "Technical evaluation of AI startups for VC/PE firms"
-    price: "$15K - $25K"
     timeline: "48-72 hours"
     icon: "search-dollar"
     
   - title: "AI Transformation Consulting" 
     description: "End-to-end AI strategy and implementation"
-    price: "$25K - $200K+"
     timeline: "2-6 months"
     icon: "rocket"
     
   - title: "Fractional CTO/AI Officer"
     description: "Strategic technology leadership"
-    price: "$5K - $25K/month"
     timeline: "Ongoing"
     icon: "user-tie"
 
@@ -75,10 +96,10 @@ services:
 stats:
   - number: "20+"
     label: "Years Experience"
-  - number: "500+"  
-    label: "Fortune 500 Clients"
-  - number: "$200M+"
-    label: "Value Delivered"
+  - number: "10+"  
+    label: "Digital Transformations"
+  - number: "50+"
+    label: "Talent Groomed"
 
 # Exclude from processing
 exclude:

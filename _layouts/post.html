@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | truncate: 160 }}">
+    
+    {% seo %}
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="{{ '/' | relative_url }}" class="nav-logo">
+                {{ site.author.name }}
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                {% for page in site.header_pages %}
+                    {% assign page_path = page | remove: '.md' %}
+                    <a href="{{ page_path | prepend: '/' | relative_url }}" class="nav-link">
+                        {{ page | remove: '.md' | capitalize }}
+                    </a>
+                {% endfor %}
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Blog Post Header -->
+        <section class="section" style="padding-top: 120px; padding-bottom: 2rem;">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" style="margin-bottom: 2rem;">
+                    <a href="{{ '/blogs/' | relative_url }}" style="color: var(--primary); font-weight: 500;">
+                        <i class="fas fa-arrow-left"></i> Back to Blogs
+                    </a>
+                </nav>
+                
+                <!-- Post Header -->
+                <div class="post-header" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1 style="font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.2;">{{ page.title }}</h1>
+                    
+                    {% if page.description %}
+                    <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 2rem;">{{ page.description }}</p>
+                    {% endif %}
+                    
+                    <!-- Post Meta -->
+                    <div class="post-meta" style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-light);">
+                        <div>
+                            <i class="fas fa-calendar"></i> 
+                            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                        </div>
+                        
+                        {% if page.read_time %}
+                        <div>
+                            <i class="fas fa-clock"></i> {{ page.read_time }} min read
+                        </div>
+                        {% endif %}
+                        
+                        {% if page.author %}
+                        <div>
+                            <i class="fas fa-user"></i> {{ page.author }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- Tags -->
+                    {% if page.tags.size > 0 %}
+                    <div class="post-tags" style="margin-bottom: 3rem;">
+                        {% for tag in page.tags %}
+                        <span class="tag" style="background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; margin-right: 0.5rem; font-weight: 500;">
+                            {{ tag }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        
+        <!-- Blog Content -->
+        <article class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="post-content" style="max-width: 800px; margin: 0 auto;">
+                    {{ content }}
+                </div>
+            </div>
+        </article>
+        
+        <!-- Post Footer -->
+        <section class="section bg-light" style="padding-top: 3rem; padding-bottom: 3rem;">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h3 style="margin-bottom: 1rem;">Enjoyed this article?</h3>
+                    <p style="margin-bottom: 2rem; color: var(--text-light);">
+                        Connect with me for more insights on AI, technology, and enterprise transformation.
+                    </p>
+                    
+                    <div class="btn-group" style="justify-content: center;">
+                        <a href="{{ site.social_links.linkedin }}" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                        </a>
+                        <a href="/contact/" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Related Posts -->
+        {% assign related_posts = site.posts | where_exp: "post", "post.url != page.url" | sample: 3 %}
+        {% if related_posts.size > 0 %}
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center mb-4">More Articles</h2>
+                
+                <div class="grid grid-auto">
+                    {% for post in related_posts %}
+                    <article class="card">
+                        <h4 style="margin-bottom: 0.5rem;">
+                            <a href="{{ post.url | relative_url }}" style="color: var(--text); text-decoration: none;">
+                                {{ post.title }}
+                            </a>
+                        </h4>
+                        
+                        <div style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">
+                            <i class="fas fa-calendar"></i> {{ post.date | date: "%B %d, %Y" }}
+                        </div>
+                        
+                        <p style="margin-bottom: 1rem;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+                        
+                        <a href="{{ post.url | relative_url }}" class="btn btn-primary" style="font-size: 0.9rem; padding: 8px 16px;">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>{{ site.author.name }}</h4>
+                    <p>{{ site.description | strip_html | truncate: 100 }}</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> {{ site.author.email }}</p>
+                    <p><i class="fas fa-phone"></i> {{ site.author.phone }}</p>
+                    <p><i class="fas fa-map-marker-alt"></i> {{ site.author.location }}</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        {% for link in site.social_links %}
+                            <a href="{{ link[1] }}" target="_blank" rel="noopener">
+                                <i class="fab fa-{{ link[0] }}"></i>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

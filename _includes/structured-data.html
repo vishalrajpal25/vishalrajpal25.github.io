@@ -1,0 +1,77 @@
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vishal Rajpal",
+  "jobTitle": "Enterprise AI Engineering Leader",
+  "description": "{{ site.description | strip_html | strip_newlines | truncate: 160 }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "image": "{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg",
+  "email": "{{ site.author.email }}",
+  "telephone": "{{ site.author.phone }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "{{ site.social_links.linkedin }}",
+    "{{ site.social_links.github }}",
+    "{{ site.social_links.twitter }}"
+  ],
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Enterprise AI Transformation",
+    "Cloud Architecture",
+    "Investment Due Diligence",
+    "Technology Consulting",
+    "Agentic AI",
+    "MLOps",
+    "Digital Transformation"
+  ],
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Various Fortune 500 Companies"
+    }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Independent Consultant"
+  }
+}
+</script>
+
+{% if page.layout == 'default' and page.title == 'Home' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Vishal Rajpal - Enterprise AI Engineering",
+  "description": "{{ site.description | strip_html | strip_newlines }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "logo": "{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg",
+  "image": "{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg",
+  "founder": {
+    "@type": "Person",
+    "name": "Vishal Rajpal"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": [
+    "AI Transformation Consulting",
+    "Investment Due Diligence",
+    "Strategic Technology Leadership",
+    "Enterprise AI Implementation"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  }
+}
+</script>
+{% endif %}
