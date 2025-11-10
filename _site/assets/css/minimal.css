@@ -25,8 +25,8 @@
   --space-small: 16px;
 
   /* Layout */
-  --max-width: 900px;
-  --max-width-wide: 1200px;
+  --max-width: 1100px;
+  --max-width-wide: 1400px;
 }
 
 /* ==================== RESET & BASE ==================== */
@@ -114,13 +114,15 @@ pre {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--space-small);
+  padding: 0 2rem;
+  width: 100%;
 }
 
 .container-wide {
   max-width: var(--max-width-wide);
   margin: 0 auto;
-  padding: 0 var(--space-small);
+  padding: 0 2rem;
+  width: 100%;
 }
 
 .section {
