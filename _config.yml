@@ -1,11 +1,11 @@
 # Site settings
-title: "Vishal Rajpal - Enterprise AI Engineering Leader"
-subtitle: "Enterprise AI Engineering"  
+title: "Vishal Rajpal"
+subtitle: "I build and evaluate enterprise AI systems"
 email: vishalrajpal25@gmail.com
 description: >-
-  Vishal Rajpal - Enterprise AI Engineering Leader with 20+ years of experience in AI transformation, 
-  cloud architecture, and strategic technology consulting. Specializing in investment due diligence, 
-  agentic AI implementation, and enterprise technology leadership for Fortune 500 companies.
+  Vishal Rajpal - Full-stack technology leader with 20+ years building and evaluating enterprise AI systems.
+  VP Engineering at Fractal Analytics (Cogentiq). Previously: Databricks, McKinsey QuantumBlack.
+  Product strategy, engineering leadership, client transformation, and GTM.
 
 baseurl: ""
 url: "https://vishalrajpal25.github.io"
@@ -31,13 +31,16 @@ keywords: "AI engineering, enterprise AI, technology consulting, investment due 
 # Author information
 author:
   name: "Vishal Rajpal"
-  title: "Enterprise AI Engineering"
+  title: "VP Engineering"
   company: "Fractal Analytics"
-  location: "San Francisco / Palo Alto, CA" 
+  role_detail: "Building enterprise agentic AI (Cogentiq)"
+  previous: "Databricks, McKinsey QuantumBlack"
+  location: "Mountain View / Palo Alto / Los Altos, CA"
   phone: "+1.650.305.9747"
   email: "vishalrajpal25@gmail.com"
   linkedin: "linkedin.com/in/rajpalvishal"
-  github: "github.com/virajpal25"
+  github: "github.com/vishalrajpal25"
+  substack: "https://substack.com/@vishalrajpal"
 
 # Build settings
 markdown: kramdown
@@ -64,9 +67,9 @@ paginate_path: "/blogs/page:num/"
 
 # Navigation
 header_pages:
-  - about.md
-  - specializations.md
-  - blogs.md
+  - work.md
+  - thesis.md
+  - writing.md
   - contact.md
 
 # Social links
@@ -75,31 +78,32 @@ social_links:
   github: "https://github.com/virajpal25"
   twitter: "https://twitter.com/Virajpal"
 
-# Specializations configuration
-specializations:
-  - title: "Investment Due Diligence"
-    description: "Technical evaluation of AI startups for VC/PE firms"
-    timeline: "48-72 hours"
-    icon: "search-dollar"
-    
-  - title: "AI Transformation Consulting" 
-    description: "End-to-end AI strategy and implementation"
-    timeline: "2-6 months"
-    icon: "rocket"
-    
-  - title: "Fractional CTO/AI Officer"
-    description: "Strategic technology leadership"
-    timeline: "Ongoing"
-    icon: "user-tie"
+# Projects for Work page (placeholders - to be filled with details)
+projects:
+  - id: "magnificent7-agentic"
+    title: "Multi-Agentic Platform for S&P Magnificent 7"
+    category: "Product Engineering"
+    year: "2024-2025"
 
-# Stats for homepage
-stats:
-  - number: "20+"
-    label: "Years Experience"
-  - number: "10+"  
-    label: "Digital Transformations"
-  - number: "50+"
-    label: "Talent Groomed"
+  - id: "unity-catalog-bank"
+    title: "Unity Catalog Early Adoption - Large Asia Bank"
+    category: "Enterprise Data Platform"
+    year: "2022-2023"
+
+  - id: "pharma-data-strategy"
+    title: "Global Data Strategy for Top 5 EU Pharmaceutical"
+    category: "Data Strategy & Engineering"
+    year: "2020-2021"
+
+  - id: "health-insurance-agentic"
+    title: "Agentic AI for Data Estate Management - Top 5 Health Insurance"
+    category: "AI & Automation"
+    year: "2023-2024"
+
+  - id: "mlops-asia-first"
+    title: "Asia's First MLOps Implementation - Large Conglomerate"
+    category: "MLOps Platform"
+    year: "2019-2021"
 
 # Exclude from processing
 exclude:

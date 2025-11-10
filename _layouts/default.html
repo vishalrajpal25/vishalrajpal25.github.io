@@ -34,11 +34,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}">
 </head>
 <body>
     <!-- Header -->
@@ -70,32 +70,32 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container" style="padding-left: 1rem; padding-right: 1rem;">
-            <div class="footer-content" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+        <div class="container-wide">
+            <div class="footer-content">
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p><i class="fas fa-envelope"></i> {{ site.author.email }}</p>
                     <p><i class="fas fa-phone"></i> {{ site.author.phone }}</p>
                     <p><i class="fas fa-map-marker-alt"></i> {{ site.author.location }}</p>
                 </div>
-                
-                <div class="footer-section" style="text-align: right;">
+
+                <div class="footer-section">
                     <h4>Connect</h4>
-                    <div class="social-links" style="justify-content: flex-end;">
-                        {% for link in site.social_links %}
-                            <a href="{{ link[1] }}" target="_blank" rel="noopener">
-                                {% if link[0] == 'twitter' %}
-                                <i class="fab fa-x-twitter"></i>
-                                {% else %}
-                                <i class="fab fa-{{ link[0] }}"></i>
-                                {% endif %}
-                            </a>
-                        {% endfor %}
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/rajpalvishal" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://substack.com/@vishalrajpal" target="_blank" rel="noopener" aria-label="Substack">
+                            <i class="fas fa-rss"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            
-            <div style="text-align: center;">
+
+            <div class="footer-bottom">
                 <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
             </div>
         </div>

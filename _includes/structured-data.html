@@ -4,7 +4,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Vishal Rajpal",
-  "jobTitle": "Enterprise AI Engineering Leader",
+  "jobTitle": "VP Engineering",
   "description": "{{ site.description | strip_html | strip_newlines | truncate: 160 }}",
   "url": "{{ site.url }}{{ site.baseurl }}",
   "image": "{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg",
@@ -12,35 +12,45 @@
   "telephone": "{{ site.author.phone }}",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "San Francisco",
+    "addressLocality": "Mountain View",
     "addressRegion": "CA",
     "addressCountry": "US"
   },
   "sameAs": [
     "{{ site.social_links.linkedin }}",
     "{{ site.social_links.github }}",
-    "{{ site.social_links.twitter }}"
+    "{{ site.author.substack }}"
   ],
   "knowsAbout": [
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Enterprise AI Transformation",
-    "Cloud Architecture",
-    "Investment Due Diligence",
-    "Technology Consulting",
+    "Enterprise AI Systems",
     "Agentic AI",
+    "Product Engineering",
+    "Platform Engineering",
     "MLOps",
-    "Digital Transformation"
+    "Cloud Data Platforms",
+    "Investment Due Diligence",
+    "Technology Leadership",
+    "Go-to-Market Strategy",
+    "Databricks",
+    "Unity Catalog"
   ],
   "alumniOf": [
     {
       "@type": "Organization",
-      "name": "Various Fortune 500 Companies"
+      "name": "Databricks"
+    },
+    {
+      "@type": "Organization",
+      "name": "McKinsey & Company"
+    },
+    {
+      "@type": "Organization",
+      "name": "Morgan Stanley"
     }
   ],
   "worksFor": {
     "@type": "Organization",
-    "name": "Independent Consultant"
+    "name": "Fractal Analytics"
   }
 }
 </script>
@@ -49,29 +59,16 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Vishal Rajpal - Enterprise AI Engineering",
+  "@type": "WebSite",
+  "name": "Vishal Rajpal",
   "description": "{{ site.description | strip_html | strip_newlines }}",
   "url": "{{ site.url }}{{ site.baseurl }}",
-  "logo": "{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg",
-  "image": "{{ site.url }}{{ site.baseurl }}/assets/images/profile.jpg",
-  "founder": {
+  "author": {
     "@type": "Person",
-    "name": "Vishal Rajpal"
+    "name": "Vishal Rajpal",
+    "jobTitle": "VP Engineering"
   },
-  "areaServed": "Worldwide",
-  "serviceType": [
-    "AI Transformation Consulting",
-    "Investment Due Diligence",
-    "Strategic Technology Leadership",
-    "Enterprise AI Implementation"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "San Francisco",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  }
+  "keywords": "enterprise AI, agentic AI, product engineering, technical leadership, VP Engineering, Databricks, McKinsey"
 }
 </script>
 {% endif %}
