@@ -9,7 +9,7 @@ keywords: enterprise AI, AI investment, technology leadership, enterprise adopti
     <div class="container">
         <h1 class="mb-small">Perspective</h1>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
             <div>
                 <h3 style="margin-bottom: 1rem;">Background</h3>
                 <p>VP Engineering at Fractal Analytics, leading Cogentiq—an enterprise agentic AI platform deployed at Fortune 500 companies.</p>
@@ -21,7 +21,6 @@ keywords: enterprise AI, AI investment, technology leadership, enterprise adopti
                 <h3 style="margin-bottom: 1rem;">Current Focus</h3>
                 <p>Building and deploying Cogentiq across Fortune 500 enterprises. Product engineering, client transformation, GTM, and engineering leadership (80+ team).</p>
                 <p>Recent: Multi-agent orchestration architecture, knowledge synthesis workflows, regulated environment deployments.</p>
-                <p>Based in Bay Area. Open to the right full-time role (CTO, VP Engineering), VC diligence work, or strategic advisory.</p>
             </div>
         </div>
 
@@ -29,7 +28,7 @@ keywords: enterprise AI, AI investment, technology leadership, enterprise adopti
 
         <h2 style="margin-bottom: 2rem;">What I've Learned</h2>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
             <div>
                 <h4>On Enterprise AI</h4>
                 <p>Integration matters more than models. Orchestration, observability, security, and compliance are the hard problems. Most companies need infrastructure and organizational design, not research.</p>
@@ -71,20 +70,9 @@ keywords: enterprise AI, AI investment, technology leadership, enterprise adopti
 
         <h2 style="margin-bottom: 2rem;">What I'm Looking For</h2>
 
-        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
-            <div>
-                <h4>Companies</h4>
-                <p>Building real enterprise AI products for regulated industries or complex workflows. Teams that ship to production, not just demos. Series A–C, or exceptional pre-seed founders with enterprise software experience.</p>
+        <p>Building real enterprise AI products for regulated industries or complex workflows. Teams that ship to production, not just demos. Series A–C, or exceptional pre-seed founders with enterprise software experience.</p>
 
-                <p style="margin-top: 1.5rem;"><strong>Not a fit:</strong> Consumer AI, pure research, unclear GTM, companies that don't understand enterprise procurement or security review processes.</p>
-            </div>
-
-            <div>
-                <h4>Roles</h4>
-                <p>CTO, VP Engineering, Chief AI Officer at the right company: 0→1 product challenge, enterprise GTM, team that values execution over hype.</p>
-                <p style="margin-top: 1rem;">Also open to VC diligence work (AI infrastructure, enterprise software) and strategic advisory.</p>
-            </div>
-        </div>
+        <p style="margin-top: 1.5rem;"><strong>Not a fit:</strong> Consumer AI, pure research, unclear GTM, companies that don't understand enterprise procurement or security review processes.</p>
 
         <hr class="divider" style="margin-top: 3rem;">
 
