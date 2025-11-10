@@ -68,7 +68,7 @@ paginate_path: "/blogs/page:num/"
 # Navigation
 header_pages:
   - work.md
-  - thesis.md
+  - perspective.md
   - writing.md
   - contact.md
 
