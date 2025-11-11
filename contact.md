@@ -18,14 +18,10 @@ keywords: Vishal Rajpal contact, email, Bay Area
                 <p style="font-size: 18px; color: var(--text-secondary);">{{ site.author.location }}</p>
             </div>
 
-            <div class="links" style="margin-bottom: 2rem;">
+            <div class="links">
                 <a href="https://linkedin.com/in/rajpalvishal" target="_blank" rel="noopener" class="link-item">LinkedIn</a>
                 <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" class="link-item">GitHub</a>
                 <a href="{{ site.author.substack }}" target="_blank" rel="noopener" class="link-item">Substack</a>
-            </div>
-
-            <div class="links">
-                <a href="/Vishal_Rajpal_Eng_v6.pdf" target="_blank" class="link-item"><i class="fas fa-file-pdf"></i> Resume</a>
             </div>
         </div>
     </div>

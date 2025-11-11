@@ -70,7 +70,7 @@ keywords: enterprise AI, AI investment, technology leadership, enterprise adopti
 
         <h2 style="margin-bottom: 2rem;">Work I Find Interesting</h2>
 
-        <p>Enterprise AI products for regulated industries and complex workflows. Teams with production deployments and technical depth. Primarily Series A–C, occasionally earlier stage with exceptional founders who understand enterprise software.</p>
+        <p>Enterprise AI products for regulated industries and complex workflows. Teams with production deployments and technical depth. Primarily Series A–C & select earlier stage with exceptional founders who understand enterprise software.</p>
 
         <p style="margin-top: 1.5rem; color: var(--text-secondary);">Outside my focus: Consumer AI, research projects without clear commercialization path, teams without enterprise go-to-market experience.</p>
 

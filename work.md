@@ -16,26 +16,26 @@ keywords: Vishal Rajpal projects, enterprise AI, Unity Catalog, MLOps, agentic A
                 <h3>Multi-Agentic Platform for S&P Magnificent 7</h3>
                 <div class="project-tags">
                     <span class="tag">Product Engineering</span>
-                    <span class="tag">2024-2025</span>
-                    <span class="tag">Agentic AI</span>
+                    <span class="tag">2025</span>
+                    <span class="tag">Agentic orchestration</span>
                 </div>
             </div>
 
             <div class="project-section">
                 <h4>Context</h4>
-                <p><strong>[YOU FILL: Enterprise setting, use case details]</strong></p>
-                <p>Post-MVP deployment for one of the world's largest technology companies. Use case: knowledge synthesis, retrieval, and insights generation.</p>
+                <p><strong>Product engineering & deployment orchestrating multi-source autonomous knowledge retrieval, & synthesis</strong></p>
+                <p>Post-MVP deployment for one of the world's largest technology companies.</p>
             </div>
 
             <div class="project-section">
                 <h4>What I Did</h4>
-                <p><strong>[YOU FILL: Specific technical and product decisions]</strong></p>
+                <p><strong>Led the design, benchmark evaluations, project execution plan, infrastructure & agentic orchestrator design</strong></p>
                 <p>Led product engineering for multi-agent orchestration and knowledge synthesis workflows. Responsible for enterprise deployment architecture.</p>
             </div>
 
             <div class="project-section">
                 <h4>Impact</h4>
-                <p><strong>[YOU FILL: Specific metrics if possible]</strong></p>
+                <p><strong>Information retrieval & Insights from 3 days to 15 minutes </strong></p>
                 <p>Deployed at enterprise scale with proven value in knowledge work automation.</p>
             </div>
 
@@ -59,19 +59,18 @@ keywords: Vishal Rajpal projects, enterprise AI, Unity Catalog, MLOps, agentic A
             <div class="project-section">
                 <h4>Context</h4>
                 <p>One of India's first enterprise Unity Catalog deployments for a regulated bank. Early adopter program—worked closely with Databricks product engineering.</p>
-                <p><strong>[YOU FILL: Bank size, data scale, regulatory constraints]</strong></p>
+                <p><strong>Private sector bank</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>What I Did</h4>
                 <p>Led solution architecture, user federation design, and data governance implementation. Pioneered adoption pattern for regulated financial institutions.</p>
-                <p><strong>[YOU FILL: Specific technical challenges solved]</strong></p>
+                <p><strong>Managed Service, migration of legacy code to UC enabled & UC cluster adoption. Liase with product & engineering teams for deployment</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>Impact</h4>
                 <p>Enabled petabyte-scale data platform with enterprise governance in regulated environment. Became reference architecture for financial services in India.</p>
-                <p><strong>[YOU FILL: Specific metrics - data volume, user count, compliance achievements]</strong></p>
             </div>
 
             <div class="project-section">
@@ -94,19 +93,17 @@ keywords: Vishal Rajpal projects, enterprise AI, Unity Catalog, MLOps, agentic A
             <div class="project-section">
                 <h4>Context</h4>
                 <p>Top 5 EU pharmaceutical company. Global data management across Japan, Russia, China, Spain, and US with diverse regulatory requirements.</p>
-                <p><strong>[YOU FILL: Company context, data governance challenges]</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>What I Did</h4>
                 <p>Led global data strategy and architecture design. Built AWS/Snowflake stack across all data management tenants with unified governance model.</p>
-                <p><strong>[YOU FILL: Specific architectural decisions, team structure]</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>Impact</h4>
                 <p>Unified data platform across 5+ countries. Enabled cross-region analytics while maintaining regional compliance.</p>
-                <p><strong>[YOU FILL: Metrics - data sources integrated, analytics use cases enabled]</strong></p>
+                <p><strong>500 jobs, 39+ clusters</strong></p>
             </div>
 
             <div class="project-section">
@@ -129,19 +126,18 @@ keywords: Vishal Rajpal projects, enterprise AI, Unity Catalog, MLOps, agentic A
             <div class="project-section">
                 <h4>Context</h4>
                 <p>Top 5 US health insurance payor. Challenge: automate existing KTLO (Keep The Lights On) operations and make data estate management autonomous.</p>
-                <p><strong>[YOU FILL: Data estate scale, operational challenges]</strong></p>
+                <p><strong>30,000 jobs, > 500 TB of data</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>What I Did</h4>
                 <p>Designed and implemented agentic AI system for autonomous data estate management. Built workflow automation and operational intelligence layer.</p>
-                <p><strong>[YOU FILL: Technical architecture, agent design patterns]</strong></p>
+                <p><strong>15 impact areas identified</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>Impact</h4>
                 <p>Transformed manual KTLO into autonomous AI-driven management. Reduced operational overhead.</p>
-                <p><strong>[YOU FILL: Specific metrics - reduction in manual work, reliability improvements]</strong></p>
             </div>
 
             <div class="project-section">
@@ -164,24 +160,23 @@ keywords: Vishal Rajpal projects, enterprise AI, Unity Catalog, MLOps, agentic A
             <div class="project-section">
                 <h4>Context</h4>
                 <p>Large conglomerate with distributed business units. Challenge: move 20+ ML models from notebooks to production and institutionalize ML lifecycle.</p>
-                <p><strong>[YOU FILL: Company industry, organizational structure, model types]</strong></p>
+                <p><strong>Expert Design covering plan to deploy & monitor</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>What I Did</h4>
                 <p>Led platform consulting, architecture, and adoption strategy for end-to-end MLOps. Built cross-functional data science teams.</p>
-                <p><strong>[YOU FILL: Platform components built, organizational changes implemented]</strong></p>
+                <p><strong>Azure based process, platform & capabilities institionalized, organizational changes implemented</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>Impact</h4>
                 <p>Successfully productionized 20+ ML models across distributed business units. Established MLOps best practices and organizational model.</p>
-                <p><strong>[YOU FILL: Model performance improvements, deployment time reductions]</strong></p>
             </div>
 
             <div class="project-section">
                 <h4>Stack</h4>
-                <p>MLflow, Kubernetes, Airflow, Spark, distributed ML infrastructure, model monitoring</p>
+                <p>MLflow, Kubernetes, Spark, Azure Databricks, model monitoring</p>
             </div>
         </div>
 
