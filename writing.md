@@ -12,39 +12,12 @@ keywords: Vishal Rajpal writing, Substack, enterprise AI, platform engineering, 
             Notes on enterprise AI architecture, platform engineering, and organizational design for AI systems.
         </p>
 
-        <!-- Substack Embed -->
-        <div style="background: var(--bg-secondary); padding: 3rem 2rem; border-radius: 8px; text-align: center; margin-bottom: 3rem;">
-            <h3 style="margin-bottom: 1rem;">Substack</h3>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                Updates on enterprise AI, platform engineering, and technical leadership.
-            </p>
-
-            <iframe src="https://substack.com/embed"
-                    style="background: white; border: 1px solid var(--border); border-radius: 6px; max-width: 480px; width: 100%; height: 180px;"
-                    frameborder="0"
-                    scrolling="no">
-            </iframe>
-
-            <p style="margin-top: 1.5rem;">
-                <a href="{{ site.author.substack }}" target="_blank" rel="noopener">
-                    → Full archive
-                </a>
-            </p>
-        </div>
-
-        <hr class="divider">
-
-        <h2 class="mb-medium">Curated Posts</h2>
+        <h2 class="mb-medium">Selected Posts</h2>
         <ul style="color: var(--text-secondary); margin-bottom: 3rem;">
             <li><a href="{{ site.author.substack }}" target="_blank" rel="noopener">Enterprise AI adoption patterns and anti-patterns</a></li>
             <li><a href="{{ site.author.substack }}" target="_blank" rel="noopener">Platform engineering at scale (MLOps, DataOps, AIOps)</a></li>
             <li><a href="{{ site.author.substack }}" target="_blank" rel="noopener">Technical diligence frameworks for AI companies</a></li>
         </ul>
-
-        <!-- Placeholder for future posts -->
-        <div style="border: 1px solid var(--border); border-radius: 8px; padding: 2rem; text-align: center; color: var(--text-secondary);">
-            <p>Additional posts in progress.</p>
-        </div>
 
         <hr class="divider">
 
