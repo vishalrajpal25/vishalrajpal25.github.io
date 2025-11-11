@@ -33,7 +33,7 @@ keywords: Vishal Rajpal writing, Substack, enterprise AI, platform engineering, 
 
         <hr class="divider">
 
-        <h2 class="mb-medium">Other Writing</h2>
+        <h2 class="mb-medium">Projects</h2>
 
         <div class="cards">
             <div class="card">

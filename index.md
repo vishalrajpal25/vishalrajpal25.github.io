@@ -8,7 +8,7 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
 <section class="hero">
     <div class="container">
         <h1>Vishal Rajpal</h1>
-        <p class="subtitle">VP Engineering at Fractal Analytics<br>Enterprise AI systems, platform engineering, technical evaluation</p>
+        <p class="subtitle">Enterprise AI systems, platform engineering, technical evaluation</p>
 
         <div class="links">
             <a href="mailto:{{ site.author.email }}" class="link-item"><i class="fas fa-envelope"></i> Email</a>
