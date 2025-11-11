@@ -12,12 +12,24 @@ keywords: Vishal Rajpal writing, Substack, enterprise AI, platform engineering, 
             Notes on enterprise AI architecture, platform engineering, and organizational design for AI systems.
         </p>
 
-        <h2 class="mb-medium">Selected Posts</h2>
-        <ul style="color: var(--text-secondary); margin-bottom: 3rem;">
-            <li><a href="{{ site.author.substack }}" target="_blank" rel="noopener">Enterprise AI adoption patterns and anti-patterns</a></li>
-            <li><a href="{{ site.author.substack }}" target="_blank" rel="noopener">Platform engineering at scale (MLOps, DataOps, AIOps)</a></li>
-            <li><a href="{{ site.author.substack }}" target="_blank" rel="noopener">Technical diligence frameworks for AI companies</a></li>
-        </ul>
+        <p style="margin-bottom: 3rem;">
+            <a href="{{ site.author.substack }}" target="_blank" rel="noopener" style="font-weight: 500;">
+                → Subscribe on Substack
+            </a>
+        </p>
+
+        <h2 class="mb-medium">Articles</h2>
+
+        <div class="cards" style="margin-bottom: 3rem;">
+            {% for article in site.articles %}
+            <div class="card">
+                <div style="font-size: 14px; color: var(--text-tertiary); margin-bottom: 0.5rem;">{{ article.date }}</div>
+                <h4 style="margin-bottom: 0.75rem;">{{ article.title }}</h4>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">{{ article.description }}</p>
+                <a href="{{ article.url }}" target="_blank" rel="noopener">→ Read more</a>
+            </div>
+            {% endfor %}
+        </div>
 
         <hr class="divider">
 

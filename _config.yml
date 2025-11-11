@@ -75,7 +75,7 @@ header_pages:
 # Social links
 social_links:
   linkedin: "https://linkedin.com/in/rajpalvishal"
-  github: "https://github.com/virajpal25"
+  github: "https://github.com/vishalrajpal25"
   twitter: "https://twitter.com/Virajpal"
 
 # Projects for Work page (placeholders - to be filled with details)
@@ -104,6 +104,21 @@ projects:
     title: "Asia's First MLOps Implementation - Large Conglomerate"
     category: "MLOps Platform"
     year: "2019-2021"
+
+# Articles for Writing page
+articles:
+  - title: "Enterprise AI adoption patterns and anti-patterns"
+    url: "https://substack.com/@vishalrajpal"
+    description: "Lessons from deploying AI systems across Fortune 500 companies."
+    date: "Coming soon"
+  - title: "Platform engineering at scale"
+    url: "https://substack.com/@vishalrajpal"
+    description: "MLOps, DataOps, and organizational design for production AI."
+    date: "Coming soon"
+  - title: "Technical diligence frameworks for AI companies"
+    url: "https://substack.com/@vishalrajpal"
+    description: "Evaluating architecture, team capability, and technical risk."
+    date: "Coming soon"
 
 # Exclude from processing
 exclude:
