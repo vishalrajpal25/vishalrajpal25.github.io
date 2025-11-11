@@ -1,44 +1,31 @@
 ---
 layout: default
 title: Contact
-description: Contact Vishal Rajpal for enterprise AI consulting, investment due diligence, and strategic technology transformation services. Based in San Francisco/Palo Alto, serving clients globally with 20+ years of AI and cloud expertise.
-keywords: contact Vishal Rajpal, AI consulting contact, enterprise technology consulting, investment due diligence services, San Francisco AI consultant, Palo Alto technology expert, global AI transformation
+description: Contact Vishal Rajpal for conversations about enterprise AI, technology leadership, and product engineering.
+keywords: Vishal Rajpal contact, email, Bay Area
 ---
 
-<section class="section" style="padding-top: 120px;">
+<section class="section" style="padding-top: 100px;">
     <div class="container">
-        <div class="text-center mb-4">
-            <h1>Get In Touch</h1>
-        </div>
-        
-        <div style="max-width: 600px; margin: 0 auto;">
-            <div class="card" style="padding: 2.5rem;">
-                <div style="display: grid; gap: 1.5rem;">
-                    <div style="padding: 1.5rem; border-left: 4px solid var(--primary); background: var(--bg-light);">
-                        <h4 style="margin: 0 0 0.5rem 0; color: var(--primary);">Email</h4>
-                        <p style="margin: 0; font-size: 1.1rem;"><a href="mailto:{{ site.author.email }}" style="color: var(--text);">{{ site.author.email }}</a></p>
-                    </div>
-                    
-                    <div style="padding: 1.5rem; border-left: 4px solid var(--accent); background: var(--bg-light);">
-                        <h4 style="margin: 0 0 0.5rem 0; color: var(--accent);">Phone</h4>
-                        <p style="margin: 0; font-size: 1.1rem;"><a href="tel:{{ site.author.phone }}" style="color: var(--text);">{{ site.author.phone }}</a></p>
-                    </div>
-                    
-                    <div style="padding: 1.5rem; border-left: 4px solid var(--success); background: var(--bg-light);">
-                        <h4 style="margin: 0 0 0.5rem 0; color: var(--success);">Location</h4>
-                        <p style="margin: 0; font-size: 1.1rem; color: var(--text);">{{ site.author.location }}</p>
-                    </div>
-                </div>
-                
-                <div style="margin-top: 2.5rem; text-align: center;">
-                    <div style="display: flex; justify-content: center; gap: 1.5rem;">
-                        {% for link in site.social_links %}
-                        <a href="{{ link[1] }}" target="_blank" rel="noopener" style="color: var(--text-light); font-size: 1.5rem; transition: var(--transition);" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-light)'">
-                            <i class="fab fa-{{ link[0] }}"></i>
-                        </a>
-                        {% endfor %}
-                    </div>
-                </div>
+        <h1 class="mb-small">Contact</h1>
+
+        <div style="margin-bottom: 3rem;">
+            <div style="margin-bottom: 2rem;">
+                <p style="font-size: 20px; margin-bottom: 0.75rem;">
+                    <a href="mailto:{{ site.author.email }}" style="font-weight: 600;">{{ site.author.email }}</a>
+                </p>
+                <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 0.75rem;">{{ site.author.phone }}</p>
+                <p style="font-size: 18px; color: var(--text-secondary);">{{ site.author.location }}</p>
+            </div>
+
+            <div class="links" style="margin-bottom: 2rem;">
+                <a href="https://linkedin.com/in/rajpalvishal" target="_blank" rel="noopener" class="link-item">LinkedIn</a>
+                <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" class="link-item">GitHub</a>
+                <a href="{{ site.author.substack }}" target="_blank" rel="noopener" class="link-item">Substack</a>
+            </div>
+
+            <div class="links">
+                <a href="/Vishal_Rajpal_Eng_v6.pdf" target="_blank" class="link-item"><i class="fas fa-file-pdf"></i> Resume</a>
             </div>
         </div>
     </div>
