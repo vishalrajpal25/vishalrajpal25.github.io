@@ -52,27 +52,27 @@ keywords: enterprise AI, AI investment, technology leadership, enterprise adopti
 
         <hr class="divider">
 
-        <h2 style="margin-bottom: 2rem;">What's Investable</h2>
+        <h2 style="margin-bottom: 2rem;">Investment Focus</h2>
 
         <div style="margin-bottom: 3rem;">
-            <p style="margin-bottom: 1.5rem;">I look for:</p>
+            <p style="margin-bottom: 1.5rem;">Areas of interest:</p>
 
             <ul style="margin-bottom: 1.5rem;">
-                <li>Tools that reduce time-to-production for AI systems</li>
-                <li>Workflow automation that integrates with existing enterprise infrastructure</li>
-                <li>Infrastructure with governance and compliance built in, not bolted on</li>
+                <li>Infrastructure that reduces time-to-production for AI systems</li>
+                <li>Enterprise workflow automation with native integration</li>
+                <li>Governance and compliance infrastructure for regulated environments</li>
             </ul>
 
-            <p><strong>Not interested in:</strong> Model wrappers, consumer AI, "AI for X" without distribution.</p>
+            <p style="color: var(--text-secondary);">Less relevant: Model wrappers, consumer applications, unclear distribution strategy.</p>
         </div>
 
         <hr class="divider">
 
-        <h2 style="margin-bottom: 2rem;">What I'm Looking For</h2>
+        <h2 style="margin-bottom: 2rem;">Work I Find Interesting</h2>
 
-        <p>Building real enterprise AI products for regulated industries or complex workflows. Teams that ship to production, not just demos. Series A–C, or exceptional pre-seed founders with enterprise software experience.</p>
+        <p>Enterprise AI products for regulated industries and complex workflows. Teams with production deployments and technical depth. Primarily Series A–C, occasionally earlier stage with exceptional founders who understand enterprise software.</p>
 
-        <p style="margin-top: 1.5rem;"><strong>Not a fit:</strong> Consumer AI, pure research, unclear GTM, companies that don't understand enterprise procurement or security review processes.</p>
+        <p style="margin-top: 1.5rem; color: var(--text-secondary);">Outside my focus: Consumer AI, research projects without clear commercialization path, teams without enterprise go-to-market experience.</p>
 
         <hr class="divider" style="margin-top: 3rem;">
 

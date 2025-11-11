@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Home
-description: I build and evaluate enterprise AI systems. 20+ years as an operator, builder, and advisor.
+description: Vishal Rajpal - VP Engineering at Fractal Analytics. Enterprise AI systems, platform engineering, technical evaluation.
 keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, technical diligence, VP Engineering
 ---
 
 <section class="hero">
     <div class="container">
-        <h1>I build and evaluate enterprise AI systems.</h1>
-        <p class="subtitle">20+ years. Operator, builder, advisor.</p>
+        <h1>Vishal Rajpal</h1>
+        <p class="subtitle">VP Engineering at Fractal Analytics<br>Enterprise AI systems, platform engineering, technical evaluation</p>
 
         <div class="links">
             <a href="mailto:{{ site.author.email }}" class="link-item"><i class="fas fa-envelope"></i> Email</a>
@@ -24,42 +24,42 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
     <div class="container">
         <div class="blocks">
             <div class="block">
-                <h3><i class="fas fa-chart-line" style="color: var(--accent); margin-right: 0.5rem;"></i>For VCs</h3>
+                <h3>Technical Diligence</h3>
                 <ul>
-                    <li>48–72h technical diligence: architecture, moat, feasibility</li>
-                    <li>Benchmarking and risk analysis; build/reality checks</li>
-                    <li>Clear readouts you can share with partners</li>
+                    <li>Architecture evaluation and feasibility assessment</li>
+                    <li>Technical risk analysis and benchmarking</li>
+                    <li>Team structure and execution capability review</li>
                 </ul>
             </div>
             <div class="block">
-                <h3><i class="fas fa-rocket" style="color: var(--accent); margin-right: 0.5rem;"></i>For Founders</h3>
+                <h3>Advisory</h3>
                 <ul>
-                    <li>Architecture spikes and production pathways</li>
-                    <li>Delivery acceleration and hiring support</li>
-                    <li>Enterprise constraints: security, data, integration</li>
+                    <li>Production architecture and deployment planning</li>
+                    <li>Enterprise integration and security requirements</li>
+                    <li>Engineering team structure and hiring</li>
                 </ul>
             </div>
         </div>
     </div>
-    
+
 </section>
 
 <section class="section-compact">
     <div class="container">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
             <div>
-                <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-building" style="color: var(--accent); margin-right: 0.5rem; font-size: 0.9em;"></i>Current</h4>
-                <p style="color: var(--text-secondary);">Leading Cogentiq engineering at Fractal—product, deployment, GTM across Fortune 500 enterprises. Team of 80+.</p>
+                <h4 style="margin-bottom: 0.5rem;">Current</h4>
+                <p style="color: var(--text-secondary);">VP Engineering at Fractal Analytics, leading Cogentiq (enterprise AI platform) across product, deployment, and go-to-market. Team of 80+.</p>
             </div>
 
             <div>
-                <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-briefcase" style="color: var(--accent); margin-right: 0.5rem; font-size: 0.9em;"></i>Experience</h4>
-                <p style="color: var(--text-secondary);">Databricks (Solution Architecture), McKinsey QuantumBlack (Principal Engineer), Fractal (multiple roles), Morgan Stanley, Accenture.</p>
+                <h4 style="margin-bottom: 0.5rem;">Previously</h4>
+                <p style="color: var(--text-secondary);">Databricks (Solution Architecture), McKinsey QuantumBlack (Principal Engineer), Morgan Stanley, Accenture. Multiple roles across product, consulting, and platform engineering.</p>
             </div>
 
             <div>
-                <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-user-tie" style="color: var(--accent); margin-right: 0.5rem; font-size: 0.9em;"></i>Background</h4>
-                <p style="color: var(--text-secondary);">20+ years across product engineering, client transformation, GTM, and engineering leadership.</p>
+                <h4 style="margin-bottom: 0.5rem;">Focus</h4>
+                <p style="color: var(--text-secondary);">Enterprise AI deployment, platform architecture, technical evaluation, and engineering leadership in regulated environments.</p>
             </div>
         </div>
     </div>
@@ -69,7 +69,7 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
 
 <section class="section-compact">
     <div class="container">
-        <h2 style="margin-bottom: 2rem;"><i class="fas fa-code" style="color: var(--accent); margin-right: 0.75rem; font-size: 0.9em;"></i>Selected Work</h2>
+        <h2 style="margin-bottom: 2rem;">Selected Work</h2>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
             {% for project in site.projects %}
@@ -82,7 +82,7 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
         </div>
 
         <p class="text-center">
-            <a href="/work/">→ Full project details</a>
+            <a href="/work/">→ View details</a>
         </p>
     </div>
 </section>
@@ -91,24 +91,23 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
 
 <section class="section-compact">
     <div class="container">
-        <h2 style="margin-bottom: 1.5rem;"><i class="fas fa-bolt" style="color: var(--accent); margin-right: 0.75rem; font-size: 0.9em;"></i>Now</h2>
+        <h2 style="margin-bottom: 1.5rem;">Recent Work</h2>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
             <div>
-                <p style="margin-bottom: 1rem;">Leading engineering for Cogentiq—an enterprise agentic AI platform—across product, deployment, and GTM.</p>
+                <p style="margin-bottom: 1rem;">Leading Cogentiq engineering—an enterprise AI platform for knowledge work automation—across product development, deployment, and go-to-market.</p>
 
-                <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Recent work:</strong></p>
                 <ul style="color: var(--text-secondary); margin-bottom: 0;">
-                    <li>Multi-agent orchestration architecture for knowledge synthesis</li>
-                    <li>2 Fortune 500 deployments (knowledge work, minutes vs hours)</li>
-                    <li>Cross-functional leadership: product engineering, delivery, GTM</li>
+                    <li>Multi-agent orchestration architecture</li>
+                    <li>Fortune 500 deployments in regulated environments</li>
+                    <li>Engineering team leadership (80+ engineers)</li>
                 </ul>
             </div>
 
             <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px;">
-                <p style="font-size: 14px; color: var(--text-tertiary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-layer-group" style="margin-right: 0.5rem;"></i>Stack</p>
+                <p style="font-size: 14px; color: var(--text-tertiary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">Stack</p>
                 <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">
-                    LLMs, multi-agent orchestration, RAG, conversational memory, eval frameworks, enterprise integration
+                    LLMs, multi-agent systems, RAG, evaluation frameworks, enterprise integration, compliance infrastructure
                 </p>
             </div>
         </div>
