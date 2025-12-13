@@ -35,7 +35,7 @@ author:
   company: "Fractal Analytics"
   role_detail: "Building enterprise agentic AI (Cogentiq)"
   previous: "Databricks, McKinsey QuantumBlack"
-  location: "Mountain View / Palo Alto / Los Altos, CA"
+  location: "San Francisco Bay Area"
   phone: "+1.650.305.9747"
   email: "vishalrajpal25@gmail.com"
   linkedin: "linkedin.com/in/rajpalvishal"
@@ -68,7 +68,6 @@ paginate_path: "/blogs/page:num/"
 # Navigation
 header_pages:
   - work.md
-  - perspective.md
   - writing.md
   - contact.md
 
