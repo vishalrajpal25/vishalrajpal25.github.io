@@ -41,6 +41,7 @@ author:
   linkedin: "linkedin.com/in/rajpalvishal"
   github: "github.com/vishalrajpal25"
   substack: "https://substack.com/@vishalrajpal"
+  substack_rss: "https://vishalrajpal.substack.com/feed"
 
 # Build settings
 markdown: kramdown

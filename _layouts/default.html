@@ -8,6 +8,9 @@
     <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
     <meta name="author" content="{{ site.author.name }}">
     <meta name="robots" content="index, follow">
+    {% if site.author.substack_rss %}
+    <meta name="substack-rss" content="{{ site.author.substack_rss }}">
+    {% endif %}
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">

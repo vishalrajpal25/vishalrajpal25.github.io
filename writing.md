@@ -18,17 +18,13 @@ keywords: Vishal Rajpal writing, Substack, enterprise AI, platform engineering, 
             </a>
         </p>
 
-        <h2 class="mb-medium">Articles</h2>
+        <h2 class="mb-medium">Latest Articles</h2>
 
-        <div class="cards" style="margin-bottom: 3rem;">
-            {% for article in site.articles %}
-            <div class="card">
-                <div style="font-size: 14px; color: var(--text-tertiary); margin-bottom: 0.5rem;">{{ article.date }}</div>
-                <h4 style="margin-bottom: 0.75rem;">{{ article.title }}</h4>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem;">{{ article.description }}</p>
-                <a href="{{ article.url }}" target="_blank" rel="noopener">→ Read more</a>
+        <!-- Substack Articles Container -->
+        <div id="substack-articles" class="cards" style="margin-bottom: 3rem;">
+            <div class="card" style="text-align: center; padding: 3rem;">
+                <p style="color: var(--text-secondary);">Loading articles...</p>
             </div>
-            {% endfor %}
         </div>
 
         <hr class="divider">
