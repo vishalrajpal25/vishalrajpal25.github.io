@@ -301,6 +301,18 @@ pre {
   margin-bottom: 0;
 }
 
+/* ==================== PROJECT TILES ==================== */
+.project-tile {
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+a:hover .project-tile {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 /* ==================== PROJECT DETAIL ==================== */
 .project-detail {
   margin-bottom: var(--space-medium);

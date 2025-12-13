@@ -20,29 +20,6 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
     </div>
 </section>
 
-<section class="section-compact">
-    <div class="container">
-        <div class="blocks">
-            <div class="block">
-                <h3>Technical Diligence</h3>
-                <ul>
-                    <li>Architecture evaluation and feasibility assessment</li>
-                    <li>Technical risk analysis and benchmarking</li>
-                    <li>Team structure and execution capability review</li>
-                </ul>
-            </div>
-            <div class="block">
-                <h3>Advisory</h3>
-                <ul>
-                    <li>Production architecture and deployment planning</li>
-                    <li>Enterprise integration and security requirements</li>
-                    <li>Engineering team structure and hiring</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</section>
 
 <section class="section-compact">
     <div class="container">
@@ -91,25 +68,55 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
 
 <section class="section-compact">
     <div class="container">
-        <h2 style="margin-bottom: 1.5rem;">Recent Work</h2>
+        <h2 style="margin-bottom: 2rem;">Projects</h2>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
-            <div>
-                <p style="margin-bottom: 1rem;">Leading Cogentiq engineering—an enterprise AI platform for knowledge work automation—across product development, deployment, and go-to-market.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+            <a href="https://networking-events-app.vercel.app/" target="_blank" rel="noopener" style="text-decoration: none; display: block;">
+                <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; height: 100%;" class="project-tile">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <span style="font-size: 20px;">🪩</span>
+                        <h4 style="margin: 0;">Meetrik</h4>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">Networking events app for San Francisco Tech & AI. Curated events with intent-aware scoring and weekly planning.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">Web App</span>
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">AI</span>
+                    </div>
+                </div>
+            </a>
 
-                <ul style="color: var(--text-secondary); margin-bottom: 0;">
-                    <li>Multi-agent orchestration architecture</li>
-                    <li>Fortune 500 deployments in regulated environments</li>
-                    <li>Engineering team leadership (80+ engineers)</li>
-                </ul>
-            </div>
+            <a href="https://github.com/vishalrajpal25/cursor-workflow-patterns" target="_blank" rel="noopener" style="text-decoration: none; display: block;">
+                <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; height: 100%;" class="project-tile">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <i class="fab fa-github" style="font-size: 18px; color: var(--text-secondary);"></i>
+                        <h4 style="margin: 0;">Cursor Workflow Patterns</h4>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">Reference implementation demonstrating Cursor IDE workflow patterns with test-driven development.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">JavaScript</span>
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">TDD</span>
+                    </div>
+                </div>
+            </a>
 
-            <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px;">
-                <p style="font-size: 14px; color: var(--text-tertiary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">Stack</p>
-                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">
-                    LLMs, multi-agent systems, RAG, evaluation frameworks, enterprise integration, compliance infrastructure
-                </p>
-            </div>
+            <a href="https://github.com/vishalrajpal25/compass_parenting" target="_blank" rel="noopener" style="text-decoration: none; display: block;">
+                <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; height: 100%;" class="project-tile">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <i class="fab fa-github" style="font-size: 18px; color: var(--text-secondary);"></i>
+                        <h4 style="margin: 0;">Compass Parenting</h4>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">AI-curated activities driven by intelligent parenting insights.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">Python</span>
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">AI</span>
+                    </div>
+                </div>
+            </a>
         </div>
+
+        <p class="text-center" style="margin-top: 1rem;">
+            <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener">→ View all repositories</a>
+        </p>
     </div>
 </section>
+
