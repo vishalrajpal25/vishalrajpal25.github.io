@@ -8,7 +8,7 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
 <section class="hero">
     <div class="container">
         <h1>Vishal Rajpal</h1>
-        <p class="subtitle">Enterprise AI systems, platform engineering, technical evaluation<br>20+ years across product, consulting, and engineering leadership</p>
+        <p class="subtitle">Enterprise Data & AI, Product Platform engineering, Product-led transformations<br>20+ years engineering leadership across Data, Cloud, Software & Platform Engineering.</p>
 
         <div class="links">
             <a href="mailto:{{ site.author.email }}" class="link-item"><i class="fas fa-envelope"></i> Email</a>
@@ -26,7 +26,7 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
             <div>
                 <h4 style="margin-bottom: 0.5rem;">Current</h4>
-                <p style="color: var(--text-secondary);">VP Engineering at Fractal Analytics, leading Cogentiq (enterprise AI platform) across product, deployment, and go-to-market. Team of 80+.</p>
+                <p style="color: var(--text-secondary);">VP Engineering at Fractal Analytics, co-leading Cogentiq & agentic based transformations across product, deployment, and go-to-market.</p>
             </div>
 
             <div>
