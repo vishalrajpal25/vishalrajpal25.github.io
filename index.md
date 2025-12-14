@@ -8,7 +8,7 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
 <section class="hero">
     <div class="container">
         <h1>Vishal Rajpal</h1>
-        <p class="subtitle">Enterprise Data & AI, Product Platform engineering, Product-led transformations<br>20+ years engineering leadership across Data, Cloud, Software & Platform Engineering.</p>
+        <p class="subtitle">Enterprise AI, cloud & data platforms<br>20+ years across product, consulting, platform and solutions engineering</p>
 
         <div class="links">
             <a href="mailto:{{ site.author.email }}" class="link-item"><i class="fas fa-envelope"></i> Email</a>
