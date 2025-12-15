@@ -47,7 +47,7 @@ keywords: Vishal Rajpal writing, Substack, enterprise AI, platform engineering, 
             <div class="card">
                 <h4>Patents</h4>
                 <p>Methods and Systems for Establishing a Centralized Analytics Environment.</p>
-                <p style="margin-top: 1rem; color: var(--text-secondary);">Issued patent for enterprise analytics platform design.</p>
+                <p style="margin-top: 1rem; color: var(--text-secondary);">Patent applied for enterprise analytics platform design.</p>
             </div>
         </div>
     </div>
