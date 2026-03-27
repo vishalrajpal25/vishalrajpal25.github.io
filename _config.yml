@@ -3,9 +3,8 @@ title: "Vishal Rajpal"
 subtitle: "I build and evaluate enterprise AI systems"
 email: vishalrajpal25@gmail.com
 description: >-
-  Vishal Rajpal - Full-stack technology leader with 20+ years building and evaluating enterprise AI systems.
-  VP Engineering at Fractal Analytics (Cogentiq). Previously: Databricks, McKinsey QuantumBlack.
-  Product strategy, engineering leadership, client transformation, and GTM.
+  Vishal Rajpal - VP Engineering at Fractal Analytics. 20+ years across software, data, cloud, and AI.
+  Enterprise AI engineering and transformation: data estate modernization, engineering stack transformation, vertical process AI.
 
 baseurl: ""
 url: "https://vishalrajpal25.github.io"
@@ -33,15 +32,13 @@ author:
   name: "Vishal Rajpal"
   title: "VP Engineering"
   company: "Fractal Analytics"
-  role_detail: "Building enterprise agentic AI (Cogentiq)"
+  role_detail: "Enterprise AI engineering and transformation"
   previous: "Databricks, McKinsey QuantumBlack"
-  location: "San Francisco Bay Area"
-  phone: "+1.650.305.9747"
+  location: "Palo Alto, CA"
   email: "vishalrajpal25@gmail.com"
   linkedin: "linkedin.com/in/rajpalvishal"
   github: "github.com/vishalrajpal25"
   substack: "https://substack.com/@vishalrajpal"
-  substack_rss: "https://vishalrajpal.substack.com/feed"
 
 # Build settings
 markdown: kramdown

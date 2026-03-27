@@ -8,9 +8,6 @@
     <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
     <meta name="author" content="{{ site.author.name }}">
     <meta name="robots" content="index, follow">
-    {% if site.author.substack_rss %}
-    <meta name="substack-rss" content="{{ site.author.substack_rss }}">
-    {% endif %}
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
@@ -74,33 +71,20 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container-wide">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> {{ site.author.email }}</p>
-                    <p><i class="fas fa-phone"></i> {{ site.author.phone }}</p>
-                    <p><i class="fas fa-map-marker-alt"></i> {{ site.author.location }}</p>
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="margin: 0; color: var(--text-tertiary); font-size: 14px;">&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/rajpalvishal" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://substack.com/@vishalrajpal" target="_blank" rel="noopener" aria-label="Substack">
+                        <i class="fas fa-rss"></i>
+                    </a>
                 </div>
-
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/rajpalvishal" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://substack.com/@vishalrajpal" target="_blank" rel="noopener" aria-label="Substack">
-                            <i class="fas fa-rss"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
             </div>
         </div>
     </footer>

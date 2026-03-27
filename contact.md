@@ -1,28 +1,28 @@
 ---
 layout: default
 title: Contact
-description: Contact Vishal Rajpal for conversations about enterprise AI, technology leadership, and product engineering.
-keywords: Vishal Rajpal contact, email, Bay Area
+description: Contact Vishal Rajpal - enterprise AI engineering and transformation.
+keywords: Vishal Rajpal contact, email, Palo Alto
 ---
 
 <section class="section" style="padding-top: 100px;">
     <div class="container">
         <h1 class="mb-small">Contact</h1>
 
-        <div style="margin-bottom: 3rem;">
-            <div style="margin-bottom: 2rem;">
-                <p style="font-size: 20px; margin-bottom: 0.75rem;">
-                    <a href="mailto:{{ site.author.email }}" style="font-weight: 600;">{{ site.author.email }}</a>
-                </p>
-                <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 0.75rem;">{{ site.author.phone }}</p>
-                <p style="font-size: 18px; color: var(--text-secondary);">{{ site.author.location }}</p>
-            </div>
+        <div style="margin-bottom: 2.5rem; margin-top: 1.5rem;">
+            <p style="font-size: 13px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem; text-transform: uppercase;">Email</p>
+            <p style="margin-bottom: 0.5rem;">
+                <a href="mailto:vishalrajpal25@gmail.com">vishalrajpal25@gmail.com</a>
+            </p>
+            <p style="margin-bottom: 0;">
+                <a href="mailto:vishal.jk.rajpal@gmail.com">vishal.jk.rajpal@gmail.com</a>
+            </p>
+        </div>
 
-            <div class="links">
-                <a href="https://linkedin.com/in/rajpalvishal" target="_blank" rel="noopener" class="link-item">LinkedIn</a>
-                <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" class="link-item">GitHub</a>
-                <a href="{{ site.author.substack }}" target="_blank" rel="noopener" class="link-item">Substack</a>
-            </div>
+        <div class="links">
+            <a href="https://linkedin.com/in/rajpalvishal" target="_blank" rel="noopener" class="link-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" class="link-item"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://substack.com/@vishalrajpal" target="_blank" rel="noopener" class="link-item"><i class="fas fa-rss"></i> Substack</a>
         </div>
     </div>
 </section>

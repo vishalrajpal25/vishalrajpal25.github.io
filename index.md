@@ -1,18 +1,18 @@
 ---
 layout: default
 title: Home
-description: Vishal Rajpal - VP Engineering at Fractal Analytics. Enterprise AI systems, platform engineering, technical evaluation.
-keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, technical diligence, VP Engineering
+description: Vishal Rajpal - VP Engineering at Fractal Analytics. Enterprise AI engineering and transformation.
+keywords: Vishal Rajpal, AI transformation, enterprise AI, engineering leadership, agentic AI, VP Engineering, Fractal Analytics
 ---
 
 <section class="hero">
     <div class="container">
         <h1>Vishal Rajpal</h1>
-        <p class="subtitle">Hands-on engineering across Enterprise AI, cloud, technology & data<br>20+ years across product, platform and solutions</p>
+        <p class="subtitle">Enterprise AI engineering and transformation</p>
 
         <div class="links">
             <a href="mailto:{{ site.author.email }}" class="link-item"><i class="fas fa-envelope"></i> Email</a>
-            <a href="/Vishal_Rajpal_Eng_v6.pdf" target="_blank" class="link-item"><i class="fas fa-file-pdf"></i> Resume</a>
+            <a href="/Vishal_Rajpal_2026.pdf" target="_blank" class="link-item"><i class="fas fa-file-pdf"></i> Resume</a>
             <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" class="link-item"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://linkedin.com/in/rajpalvishal" target="_blank" rel="noopener" class="link-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="{{ site.author.substack }}" target="_blank" rel="noopener" class="link-item"><i class="fas fa-rss"></i> Substack</a>
@@ -21,22 +21,29 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
 </section>
 
 
-<section class="section-compact">
+<section class="section-compact" style="padding-top: 1.5rem;">
     <div class="container">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-            <div>
-                <h4 style="margin-bottom: 0.5rem;">Current</h4>
-                <p style="color: var(--text-secondary);">VP Engineering at Fractal Analytics, co-leading Cogentiq & agentic based transformations across product, deployment, and go-to-market.</p>
+        <p style="font-size: 17px; color: var(--text-secondary); max-width: 580px; margin-bottom: 3rem; line-height: 1.7;">
+            VP, AI Engineering at Fractal Analytics. I specialize in making enterprise AI work in production — across data estates, engineering stacks, and industry-specific processes.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+            <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
+                <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">01</div>
+                <h4 style="margin-bottom: 0.5rem;">Data &amp; AI Estate Modernization</h4>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Assess and modernize digital, data, and AI estates. Agentic interventions: automated ticket triaging, FinOps, architecture modernization.</p>
             </div>
 
-            <div>
-                <h4 style="margin-bottom: 0.5rem;">Previously</h4>
-                <p style="color: var(--text-secondary);">Databricks (Solution Architecture), McKinsey QuantumBlack (Principal Engineer), Morgan Stanley, Accenture. Multiple roles across product, consulting, and platform engineering.</p>
+            <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
+                <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">02</div>
+                <h4 style="margin-bottom: 0.5rem;">Engineering Stack Transformation</h4>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">AI across the full engineering stack: software, data, platform, SRE, SDLC. Org-scale productivity uplift, not just dev tools.</p>
             </div>
 
-            <div>
-                <h4 style="margin-bottom: 0.5rem;">Focus</h4>
-                <p style="color: var(--text-secondary);">Enterprise AI deployment, platform architecture, technical evaluation, and engineering leadership in regulated environments.</p>
+            <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
+                <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">03</div>
+                <h4 style="margin-bottom: 0.5rem;">Vertical Process AI</h4>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">AI systems for specific industries and processes. MCP servers, eval frameworks, context layers. Pharma, payors, CPG, BFSI.</p>
             </div>
         </div>
     </div>
@@ -46,21 +53,64 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
 
 <section class="section-compact">
     <div class="container">
-        <h2 style="margin-bottom: 2rem;">Selected Work</h2>
+        <h2 style="margin-bottom: 2rem;">Experience</h2>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-            {% for project in site.projects %}
-            <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
-                <div style="font-size: 14px; color: var(--text-tertiary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">{{ project.year }}</div>
-                <h4 style="margin-bottom: 0.5rem;">{{ project.title }}</h4>
-                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">{{ project.category }}</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-year">2024 &ndash; Present</span>
+                    <span class="timeline-company">Fractal Analytics (Cogentiq)</span>
+                </div>
+                <div class="timeline-content">
+                    <h4>VP, AI Engineering</h4>
+                    <p>AI transformation across three tracks: estate modernization, engineering stack transformation, and vertical process AI. Agentic platform deployed for Fortune 500 clients.</p>
+                </div>
             </div>
-            {% endfor %}
-        </div>
 
-        <p class="text-center">
-            <a href="/work/">→ View details</a>
-        </p>
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-year">2023 &ndash; 2024</span>
+                    <span class="timeline-company">Fractal Analytics</span>
+                </div>
+                <div class="timeline-content">
+                    <h4>Head of Engineering, North Americas</h4>
+                    <p>Led 80+ engineers. Drove DORA metrics adoption, Azure/Databricks/Glean partnerships, and engineering operating model improvement.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-year">2021 &ndash; 2023</span>
+                    <span class="timeline-company">Databricks</span>
+                </div>
+                <div class="timeline-content">
+                    <h4>Data &amp; AI Solution Architecture Lead</h4>
+                    <p>Large-scale data modernizations on Databricks. Contributed to Unity Catalog, User Federation, and Serverless product design.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-year">2018 &ndash; 2021</span>
+                    <span class="timeline-company">McKinsey QuantumBlack</span>
+                </div>
+                <div class="timeline-content">
+                    <h4>Principal Engineer &amp; Expert</h4>
+                    <p>MLOps, data engineering, platform modernization across manufacturing, pharma, and financial services.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-year">2005 &ndash; 2018</span>
+                    <span class="timeline-company">Morgan Stanley, Accenture, Fractal</span>
+                </div>
+                <div class="timeline-content">
+                    <h4>Engineering &amp; Platform Roles</h4>
+                    <p>Morgan Stanley: low-latency pricing engines. Accenture: large-scale delivery. Fractal: incubated the Big Data practice.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -71,13 +121,29 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
         <h2 style="margin-bottom: 2rem;">Projects</h2>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+
+            <a href="https://github.com/vishalrajpal25" target="_blank" rel="noopener" style="text-decoration: none; display: block;">
+                <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; height: 100%;" class="project-tile">
+                    <div style="margin-bottom: 1rem;">
+                        <h4 style="margin: 0 0 0.25rem 0;">ECP — Enterprise Context Platform</h4>
+                        <div style="font-size: 12px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.5px;">Independent Project</div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">Context as the product. Semantic contracts, factory model for scaling. Neo4j/PostgreSQL, MCP tools, Decision Trace Graph.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">MCP</span>
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">Neo4j</span>
+                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">Python</span>
+                    </div>
+                </div>
+            </a>
+
             <a href="https://networking-events-app.vercel.app/" target="_blank" rel="noopener" style="text-decoration: none; display: block;">
                 <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; height: 100%;" class="project-tile">
-                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                        <span style="font-size: 20px;">🪩</span>
-                        <h4 style="margin: 0;">Meetrik</h4>
+                    <div style="margin-bottom: 1rem;">
+                        <h4 style="margin: 0 0 0.25rem 0;">Meetrik</h4>
+                        <div style="font-size: 12px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.5px;">Independent Project</div>
                     </div>
-                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">Networking events app for San Francisco Tech & AI. Curated events with intent-aware scoring and weekly planning.</p>
+                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">Networking events app for SF Tech &amp; AI. Curated events with intent-aware scoring and weekly planning.</p>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">Web App</span>
                         <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">AI</span>
@@ -85,27 +151,13 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
                 </div>
             </a>
 
-            <a href="https://github.com/vishalrajpal25/cursor-workflow-patterns" target="_blank" rel="noopener" style="text-decoration: none; display: block;">
-                <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; height: 100%;" class="project-tile">
-                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                        <i class="fab fa-github" style="font-size: 18px; color: var(--text-secondary);"></i>
-                        <h4 style="margin: 0;">Cursor Workflow Patterns</h4>
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">Reference implementation demonstrating Cursor IDE workflow patterns with test-driven development.</p>
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">JavaScript</span>
-                        <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">TDD</span>
-                    </div>
-                </div>
-            </a>
-
             <a href="https://github.com/vishalrajpal25/compass_parenting" target="_blank" rel="noopener" style="text-decoration: none; display: block;">
                 <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; height: 100%;" class="project-tile">
-                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                        <i class="fab fa-github" style="font-size: 18px; color: var(--text-secondary);"></i>
-                        <h4 style="margin: 0;">Compass Parenting</h4>
+                    <div style="margin-bottom: 1rem;">
+                        <h4 style="margin: 0 0 0.25rem 0;">Compass</h4>
+                        <div style="font-size: 12px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.5px;">Independent Project</div>
                     </div>
-                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">AI-curated activities driven by intelligent parenting insights.</p>
+                    <p style="color: var(--text-secondary); font-size: 15px; margin-bottom: 0.75rem;">Full-stack AI web app. AI-curated activity recommendations driven by intelligent parenting insights.</p>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">Python</span>
                         <span style="font-size: 12px; color: var(--text-tertiary); background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 4px;">AI</span>
@@ -119,4 +171,3 @@ keywords: Vishal Rajpal, enterprise AI, AI engineering, platform engineering, te
         </p>
     </div>
 </section>
-
