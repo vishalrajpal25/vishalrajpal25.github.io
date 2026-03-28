@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Home
-description: Vishal Rajpal - VP Engineering at Fractal Analytics. Enterprise AI engineering and transformation.
-keywords: Vishal Rajpal, AI transformation, enterprise AI, engineering leadership, agentic AI, VP Engineering, Fractal Analytics
+description: Vishal Rajpal - VP, AI Engineering at Fractal Analytics. Applied AI and AI engineering for enterprises.
+keywords: Vishal Rajpal, applied AI, AI engineering, enterprise AI, agentic AI, VP AI Engineering, Fractal Analytics
 ---
 
 <section class="hero">
     <div class="container">
         <h1>Vishal Rajpal</h1>
-        <p class="subtitle">Enterprise AI engineering and transformation</p>
+        <p class="subtitle">Applied AI &amp; AI Engineering</p>
 
         <div class="links">
             <a href="mailto:{{ site.author.email }}" class="link-item"><i class="fas fa-envelope"></i> Email</a>
@@ -24,7 +24,7 @@ keywords: Vishal Rajpal, AI transformation, enterprise AI, engineering leadershi
 <section class="section-compact" style="padding-top: 1.5rem;">
     <div class="container">
         <p style="font-size: 17px; color: var(--text-secondary); max-width: 580px; margin-bottom: 3rem; line-height: 1.7;">
-            VP, AI Engineering at Fractal Analytics. I specialize in making enterprise AI work in production — across data estates, engineering stacks, and industry-specific processes.
+            VP, AI Engineering at Fractal Analytics. I specialize in applied AI across four areas: data estate modernization, engineering stack transformation, vertical process AI, and platform enablers.
         </p>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
@@ -43,7 +43,13 @@ keywords: Vishal Rajpal, AI transformation, enterprise AI, engineering leadershi
             <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
                 <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">03</div>
                 <h4 style="margin-bottom: 0.5rem;">Vertical Process AI</h4>
-                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">AI systems for specific industries and processes. MCP servers, eval frameworks, context layers. Pharma, payors, CPG, BFSI.</p>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">AI systems for specific industries and processes. Process automation and transformation. Pharma, payors, CPG, BFSI.</p>
+            </div>
+
+            <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
+                <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">04</div>
+                <h4 style="margin-bottom: 0.5rem;">Platform Enablers</h4>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Agentic platforms, MCP servers, eval frameworks, context layers, trust. The enabling layer that powers the other three.</p>
             </div>
         </div>
     </div>
@@ -63,7 +69,7 @@ keywords: Vishal Rajpal, AI transformation, enterprise AI, engineering leadershi
                 </div>
                 <div class="timeline-content">
                     <h4>VP, AI Engineering</h4>
-                    <p>AI transformation across three tracks: estate modernization, engineering stack transformation, and vertical process AI. Agentic platform deployed for Fortune 500 clients.</p>
+                    <p>Applied AI transformation across four tracks: estate modernization, engineering stack transformation, vertical process AI, and platform enablers. Agentic platform deployed for Fortune 500 clients.</p>
                 </div>
             </div>
 

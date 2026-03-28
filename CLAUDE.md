@@ -8,7 +8,7 @@ Not a consultant who advises. A leader who is accountable for delivery — strat
 
 ## Current Positioning (updated March 2026)
 
-Vishal leads **AI-driven transformation for Fortune 500 enterprises** across three archetypes:
+Vishal leads **applied AI transformation for Fortune 500 enterprises** across four archetypes:
 
 ### 1. Digital & Data Estate Modernization
 - Works with CIOs, CDOs, CAIOs, CTOs to assess and modernize digital, data, and AI estates
@@ -23,16 +23,22 @@ Vishal leads **AI-driven transformation for Fortune 500 enterprises** across thr
 
 ### 3. Vertical Process Transformation
 - Building AI systems for specific industries and processes
-- Concrete examples: MCP servers for data companies, evaluation frameworks, context layers
 - Industry verticals: pharma (clinical, commercial), payors (provider management), CPG, BFSI
+- Process automation and transformation, not just tooling
+
+### 4. Platform Product & Horizontal Enablers
+- Agentic platforms, MCP servers, evaluation frameworks, context layers, trust
+- The enabling layer that powers the other three archetypes
+- Proof point: enterprise agentic platform cutting knowledge retrieval from 48hrs to under 15min (50+ users, 7 sources)
 
 ## What Changed Recently (last 3 months)
 - Pivoted from pure agentic product engineering (Cogentiq platform) to this broader AI transformation mandate
 - The agentic platform work (48hrs to 15min brief generation, 50+ users, 7 sources) is still a proof point but is now one dimension, not the whole story
-- The three archetypes above are the current framing
+- The four archetypes above are the current framing
+- The arc is: applied research to production to commercialization. He moves things to market, not just builds them.
 
 ## Key Career Highlights (for site content)
-- **Fractal/Cogentiq (current)**: VP of Engineering. Three-archetype AI transformation. Agentic platform for Fortune 500.
+- **Fractal/Cogentiq (current)**: VP, AI Engineering. Four-archetype AI transformation. Applied research to production to commercialization.
 - **Fractal (2023-2024)**: Head of Engineering, North Americas. 80+ engineers. DORA metrics. Azure/Databricks/Glean partnerships.
 - **Databricks (2021-2023)**: Led India's largest Databricks data transformations. Influenced Unity Catalog, Serverless product design.
 - **McKinsey QuantumBlack (2018-2021)**: Principal & Expert. MLOps, data engineering, platform modernization. One of Asia's first end-to-end MLOps platforms.
@@ -62,11 +68,11 @@ Vishal leads **AI-driven transformation for Fortune 500 enterprises** across thr
 This is a Hugo/Jekyll/SSG site. When updating:
 
 1. **Hero/headline**: Should reflect "AI Transformation & Engineering Leadership" not just product/platform engineering
-2. **About section**: Rewrite to reflect the three archetypes. Keep it to 3-4 sentences max. No walls of text.
+2. **About section**: Rewrite to reflect the four archetypes. Keep it to 4-5 sentences max. No walls of text.
 3. **Experience section**: Update current role to reflect the pivot. Keep prior roles concise.
 4. **Skills/tech**: Refresh to include MCP, eval frameworks, context layers, FinOps. Drop dated items.
 5. **Projects**: If there's a section, include ECP, Network Event Prioritizer, Compass as independent builds.
-6. **Remove or update**: Any content that positions him purely as an agentic product leader. That's now one dimension.
+6. **Remove or update**: Any content that positions him purely as an agentic product leader. That's now one of four dimensions.
 
 ## Links
 - Email: vishalrajpal25@gmail.com
