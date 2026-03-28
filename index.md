@@ -8,7 +8,7 @@ keywords: Vishal Rajpal, applied AI, AI engineering, enterprise AI, agentic AI, 
 <section class="hero">
     <div class="container">
         <h1>Vishal Rajpal</h1>
-        <p class="subtitle">Applied AI &amp; AI Engineering</p>
+        <p class="subtitle">Applied AI &amp; Enterprise AI Engineering</p>
 
         <div class="links">
             <a href="mailto:{{ site.author.email }}" class="link-item"><i class="fas fa-envelope"></i> Email</a>
@@ -24,10 +24,10 @@ keywords: Vishal Rajpal, applied AI, AI engineering, enterprise AI, agentic AI, 
 <section class="section-compact" style="padding-top: 1.5rem;">
     <div class="container">
         <p style="font-size: 17px; color: var(--text-secondary); max-width: 580px; margin-bottom: 3rem; line-height: 1.7;">
-            VP, AI Engineering at Fractal Analytics. I specialize in applied AI across four areas: data estate modernization, engineering stack transformation, vertical process AI, and platform enablers.
+            VP, AI Engineering at Fractal Analytics. Applied AI and enterprise AI engineering across four areas: data estate modernization, engineering stack transformation, vertical process AI, and platform enablers.
         </p>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        <div class="archetypes-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-bottom: 3rem;">
             <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
                 <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">01</div>
                 <h4 style="margin-bottom: 0.5rem;">Data &amp; AI Estate Modernization</h4>
@@ -65,7 +65,7 @@ keywords: Vishal Rajpal, applied AI, AI engineering, enterprise AI, agentic AI, 
             <div class="timeline-item">
                 <div class="timeline-meta">
                     <span class="timeline-year">2024 &ndash; Present</span>
-                    <span class="timeline-company">Fractal Analytics (Cogentiq)</span>
+                    <span class="timeline-company">Fractal Analytics</span>
                 </div>
                 <div class="timeline-content">
                     <h4>VP, AI Engineering</h4>
@@ -79,8 +79,8 @@ keywords: Vishal Rajpal, applied AI, AI engineering, enterprise AI, agentic AI, 
                     <span class="timeline-company">Fractal Analytics</span>
                 </div>
                 <div class="timeline-content">
-                    <h4>Head of Engineering, North Americas</h4>
-                    <p>Led 80+ engineers. Drove DORA metrics adoption, Azure/Databricks/Glean partnerships, and engineering operating model improvement.</p>
+                    <h4>VP Engineering, North Americas</h4>
+                    <p>Led 80+ engineers. Drove DORA metrics adoption, Azure/Databricks partnerships, and engineering operating model improvement.</p>
                 </div>
             </div>
 

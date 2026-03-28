@@ -553,6 +553,18 @@ a h4, a h3, a h2 {
   }
 }
 
+@media (max-width: 900px) {
+  .archetypes-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .archetypes-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* ==================== UTILITIES ==================== */
 .text-center {
   text-align: center;
