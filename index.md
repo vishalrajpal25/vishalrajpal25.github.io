@@ -24,32 +24,32 @@ keywords: Vishal Rajpal, applied AI, AI engineering, enterprise AI, agentic AI, 
 <section class="section-compact" style="padding-top: 1.5rem;">
     <div class="container">
         <p style="font-size: 17px; color: var(--text-secondary); max-width: 580px; margin-bottom: 3rem; line-height: 1.7;">
-            VP, AI Engineering at Fractal Analytics. Applied AI and enterprise AI engineering across four areas: data estate modernization, engineering stack transformation, vertical process AI, and platform enablers.
+            VP, AI Engineering at Fractal Analytics. I work with engineering and business leaders at large enterprises — from early problem framing through to production systems that run.
         </p>
 
         <div class="archetypes-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-bottom: 3rem;">
             <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
                 <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">01</div>
-                <h4 style="margin-bottom: 0.5rem;">Data &amp; AI Estate Modernization</h4>
-                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Assess and modernize digital, data, and AI estates. Agentic interventions: automated ticket triaging, FinOps, architecture modernization.</p>
+                <h4 style="margin-bottom: 0.5rem;">Data &amp; Estate Modernization</h4>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Digital and data estate assessment, architecture modernization, TCO reduction. Agentic automation: ticket triaging, FinOps, run operations.</p>
             </div>
 
             <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
                 <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">02</div>
                 <h4 style="margin-bottom: 0.5rem;">Engineering Stack Transformation</h4>
-                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">AI across the full engineering stack: software, data, platform, SRE, SDLC. Org-scale productivity uplift, not just dev tools.</p>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Embedding agentic workflows across software, data, platform, and SRE. Org-scale — not just tooling for individual developers.</p>
             </div>
 
             <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
                 <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">03</div>
-                <h4 style="margin-bottom: 0.5rem;">Vertical Process AI</h4>
-                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">AI systems for specific industries and processes. Process automation and transformation. Pharma, payors, CPG, BFSI.</p>
+                <h4 style="margin-bottom: 0.5rem;">Industry Process Transformation</h4>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Purpose-built systems for industry-specific processes. Pharma (clinical, commercial), payors, CPG, financial services.</p>
             </div>
 
             <div style="border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px;">
                 <div style="font-size: 12px; font-family: var(--font-mono); color: var(--text-tertiary); letter-spacing: 1px; margin-bottom: 0.75rem;">04</div>
                 <h4 style="margin-bottom: 0.5rem;">Platform Enablers</h4>
-                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">Agentic platforms, MCP servers, eval frameworks, context layers, trust. The enabling layer that powers the other three.</p>
+                <p style="color: var(--text-secondary); font-size: 15px; margin: 0;">The infrastructure layer: agentic platforms, MCP servers, eval frameworks, context and trust. What makes the other three actually work.</p>
             </div>
         </div>
     </div>
@@ -69,7 +69,7 @@ keywords: Vishal Rajpal, applied AI, AI engineering, enterprise AI, agentic AI, 
                 </div>
                 <div class="timeline-content">
                     <h4>VP, AI Engineering</h4>
-                    <p>Applied AI transformation across four tracks: estate modernization, engineering stack transformation, vertical process AI, and platform enablers. Agentic platform deployed for Fortune 500 clients.</p>
+                    <p>Working across Fractal's enterprise client base — from C-suite alignment on strategy to engineering teams shipping production systems.</p>
                 </div>
             </div>
 
